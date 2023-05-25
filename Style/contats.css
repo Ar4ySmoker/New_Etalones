@@ -433,71 +433,16 @@ z-index: 999;
 
   #slider{display: none;}
   #burger__menu{display: none;}
-.main{
-   /* display:block; */
-    /* display: grid;
-    grid-template-rows: repeat(5,1fr);
-    grid-template-columns: repeat(6,1fr); */
-  }
 
-  .section1{
-    /* grid-column: 1/-1;
-    grid-row: 1/3; */
-    background-color: #000;
-    background-image: url(../Img/BG/BG_Etalones.png) ;
-    background-position: center;
-    /* background-size: 100% auto; */
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-   align-items: flex-end;
-    height: 100vh;
-    width: 100%;
-    
-  }
 
-  
-  .prim img{
-    margin-bottom: 3rem;
-    
-   
-  }
- 
-   
-    /* ----------section2------------ */
-.plus {
-   display: flex;
-  gap: 35px;
-justify-content: center;
-}
-.plus a{
-    font-size: 21px;
-    line-height: 1.2381;
-    font-weight: 400;
-}
-.section2{
-  height: 84vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.section2 h4{
-   box-sizing: border-box;
-  /* color: #ffffff; */
-  text-align: center;
-
-    margin-top: 58px;
-    margin-bottom: 25px;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-}
 /* ----------------Text-Slide---------------- */
 
 
 /* ------------section3-------------- */
 
 
+
+/* ------------Carusel----------- */
 
 /* -------------WORLD-------------------------- */
 .world{
@@ -509,8 +454,8 @@ justify-content: center;
   background-color: #000000;
   margin-bottom: 15px;
   background-image: url(../Img/BG/bg-world.jpg);
-    background-position: 50% 30%;
-    background-repeat: no-repeat;
+  /* background-position: 25% 288%; */
+  background-repeat: round;
 
 
 }
@@ -533,7 +478,7 @@ justify-content: center;
     letter-spacing: 0em;
    
 }
-.world a{
+.world p{
   cursor: pointer;
   color: #227ED5;
   font-size: 21px;
@@ -552,13 +497,24 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 }
-.advantages-1a{
-  font-size: 4rem;
+.contacts-managers h4{
+    color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+
+}
+.contacts-managers h5{
+    background-color: #fbfbfd69;
+    padding: 5px;
+    border-radius: 5%;
+    color: #0c0c0c;
+  font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
 
 }
-.advantages-1{
+.contacts-managers{
   width: 95vw;
   margin: auto;
   display: grid;
@@ -590,16 +546,7 @@ flex-wrap: wrap;
   position:relative;
   left: 0;
 }
-.advantages-left-t {
-  background-color: white;
-/* background-image: url(../Img/BG/logo_svg_black_no_p.svg); */
-background-position: center;
-background-position-y: 58%;
-background-repeat: no-repeat;
-background-size: 10%;
-  height: 80vh;
 
-}
 .advantages-left-d {
   background-color: white;
 /* background-image: url(../Img/BG/logo_svg_black_no_p.svg); */
@@ -610,7 +557,13 @@ background-size: 10%;
   height: 80vh;
 }
 
-
+.vertical {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;;
+  transform: rotate(-90deg);
+  padding: 3px !important;
+}
   @media (max-width: 1100px ){
    .container1 {
     flex-direction: column;
@@ -630,45 +583,15 @@ background-size: 10%;
   top: -50px;
   transition: 0.4s ease-out;
 }
-.advantages-1 {
-      grid-template-columns: 1fr;
+
+.contacts-managers {
+      /* grid-template-columns: 1fr; */
 
     }
   }
   /* ---------------------- */
-  .advantages1{
-     box-sizing: border-box;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr 5fr 5fr; */
-  }
-  .advantages-left-t h4{
-    /* grid-column: 1 / -1; */
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 10px;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0em;
-  }
-  .advantages-left-t h5{
-    grid-column: 1 / -1;
-   text-align: center;
-    /* margin-top: 10px; */
-    font-size: 21px;
-    line-height: 1.2381;
-    font-weight: 400;
-    letter-spacing: 0.016em;
-    width: 80%;
-    margin: 0 auto;
-  }
-  .advantages-left-t a{
-  display: block;
-    width: max-content;
-    padding-top: 22px;
-    margin: 0 auto;
-  }
+  
+  
     .advantages-left-d h4{
     /* grid-column: 1 / -1; */
     text-align: center;
@@ -797,12 +720,7 @@ background-size: 10%;
     line-height: 1.2381;
     font-weight: 400;
 }
-#docs{
-  margin-top: 25px;
-}
-#docs a{font-size: 21px;
-    line-height: 1.2381;
-    font-weight: 400;}
+
 
 #news{
 margin-top: 25px;
@@ -900,6 +818,7 @@ justify-content: center;
    justify-content: center;
    align-items: center;
    display: none;
+   z-index: 9999;
 }
 .section-1 {
      height: 100vh;
@@ -915,7 +834,7 @@ justify-content: center;
   top: 0;
 }
 .anketa-profession {
-  box-sizing: border-box;
+    box-sizing: border-box;
    padding: 35px;
    border-radius: 30px;
    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.183);
@@ -930,7 +849,7 @@ justify-content: center;
     align-self: center;
 }
 .anketa-profession input {
-    width: 100%;
+    /* width: 100%; */
     padding: 5px 10px;
     border-radius: 7px;
     margin-top: 5px;
@@ -943,6 +862,16 @@ justify-content: center;
 }
 .anketa-profession input:focus {
     outline-color: rgba(29, 29, 201, 0.612);
+}
+.profession{
+    height: 100%;
+}
+.lineWeightBar{display: flex;
+flex-direction: column;
+margin: 1rem;}
+#checkboxes{
+    height: 20%;
+    overflow-y: scroll;
 }
 #name {
 
@@ -1019,3 +948,250 @@ footer{
    background-color: #1D1D1F;
   color: #a1a1a6;
 }
+/* ------------contacts---------------- */
+.contact-bg{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+  height: 85vh;
+  position: relative;
+  background-color: #000000;
+  /* margin-bottom: 15px; */
+  background-image: url(../Img/BG/contacts.jpg);
+  /* background-position: 25% 288%; */
+  background-repeat: no-repeat;
+  background-position: 10% 30%;
+
+
+}
+/* .contact-bg img{
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 10%;
+  height: 85vh;
+  position: absolute;
+  top: 0;
+} */
+.contact-bg h4{
+  margin-top: 4rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 0;
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0em;
+   
+}
+.contact-bg p{
+    margin-top: 1rem;
+  cursor: pointer;
+  color: #227ED5;
+  font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+}
+/* ------------Менеджер Лилия---------------- */
+
+.contacts-managers-2 a{font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;}
+
+.advantages1{
+     box-sizing: border-box;
+  }
+.contact-lilia {
+height: 80vh;
+z-index: 11;
+overflow: hidden;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+ .contact-lilia h5{
+   text-align: center;
+    /* margin-top: 10px; */
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: 0.016em;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  .contact-lilia a{
+  display: block;
+    width: max-content;
+    padding-top: 22px;
+    margin: 0 auto;
+  }
+
+.contact-lilia>img{
+    justify-self: center;
+    align-self:self-start;
+position: absolute;
+width: 40%;
+height: auto;
+object-position: 50% 50%;
+ border-radius: 50%;
+ margin: 2rem;
+box-shadow: 0rem 0 3rem #00000022;
+  /* object-fit: none; */
+}
+
+.contact-lilia-2{
+    height: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+}
+.contact-lilia-2 h4{
+    /* grid-column: 1 / -1; */
+    width: fit-content;
+    border-radius: 5px 5px 5px 5px;
+    padding: 8px;
+    text-align: center;
+    margin: 2rem;
+    /* margin-top: 3rem; */
+    /* margin-bottom: 10px; */
+    font-size: 2rem;
+    background-color: #0000007a;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    align-self: self-end;
+  }
+ 
+.mesegers-lilia{
+   flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.phone-manager-lilia{
+    display: flex;
+    justify-content: flex-end;
+}
+.phone-manager-lilia img{
+    margin: 1rem;
+}
+.phone-manager-lilia p{
+    margin-right: 2rem;
+    font-size: 1.3rem;
+    align-items: center;
+    font-weight: 600;
+    text-decoration-line:underline;
+    display: flex;
+}
+.meseger-items-lilia{
+margin-right: 2rem;
+display: flex;
+justify-content: flex-end;
+gap: 0.5rem;
+}
+/* ------------------Менеджер Евгения------------ */
+.contact-eugenia {
+height: 80vh;
+z-index: 11;
+overflow: hidden;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+ .contact-eugenia h5{
+   text-align: center;
+    /* margin-top: 10px; */
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: 0.016em;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  .contact-eugenia a{
+  display: block;
+    width: max-content;
+    padding-top: 22px;
+    margin: 0 auto;
+  }
+
+.contact-eugenia>img{
+    right: 0;
+    justify-self: center;
+    align-self:self-start;
+position: absolute;
+width: 40%;
+height: auto;
+object-position: 50% 50%;
+ border-radius: 50%;
+ margin: 2rem;
+box-shadow: 0rem 0 3rem #00000022;
+  /* object-fit: none; */
+}
+
+.contact-eugenia-2{
+    height: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+}
+.contact-eugenia-2 h4{
+    /* grid-column: 1 / -1; */
+    width: fit-content;
+    border-radius: 5px 5px 5px 5px;
+    padding: 8px;
+    text-align: center;
+    margin: 2rem;
+    /* margin-top: 3rem; */
+    /* margin-bottom: 10px; */
+    font-size: 2rem;
+    background-color: #0000007a;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    align-self: self-start;
+  }
+  .mesegers-eugenia{
+   flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.phone-manager-eugenia{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1rem;
+}
+.phone-manager-eugenia img{
+    margin: 1rem;
+}
+.phone-manager-eugenia p{
+    margin-right: 2rem;
+    font-size: 1.3rem;
+    align-items: center;
+    font-weight: 600;
+    text-decoration-line:underline;
+    display: flex;
+}
+.meseger-items-eugenia{
+margin-left: 2rem;
+display: flex;
+justify-content: flex-start;
+gap: 0.5rem;
+}
+
+/* -------------manager-Tatiana--------------- */
+
+
+
+/*  */

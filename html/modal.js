@@ -1,12 +1,13 @@
 $(document).ready(() => {
     let stepCounter = 1;
-    console.log(stepCounter)
    $("#step-next").click(() => {
     switch(stepCounter) {
         case 1: 
             $(".name-phone-age").removeClass("show");            
             $(".country").addClass("show");
             stepCounter++;
+            $("#step-back").removeClass("hide");
+        
             console.log(stepCounter)
             break;
         case 2:
@@ -35,10 +36,13 @@ $(document).ready(() => {
    $("#step-back").click(() => {
     switch(stepCounter) {
         case 2:
+        
             $(".country").removeClass("show");
+            $("#step-back").removeClass("hide");
             $(".name-phone-age").addClass("show");
             stepCounter -= 1;
-            console.log(stepCounter)
+            
+            console.log(stepCounter);
              break;
         case 3: 
            $(".profession").removeClass("show");
@@ -62,4 +66,13 @@ $(document).ready(() => {
 
     }
    })
+
+   let lineW = document.getElementById('lineW');
+let lineWeightValue = document.getElementById('lineWeightValue');
+
+setInterval(() => lineWeightValue.innerHTML = lineW.value, 0);
+
+
+
+
 })
