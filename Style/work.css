@@ -196,12 +196,12 @@ select { /* 1 */
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
-button,
+/* button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
-}
+} */
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -291,10 +291,10 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
+/* [type="search"] {
+  -webkit-appearance: textfield; 
+  outline-offset: -2px; 
+} */
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
@@ -371,19 +371,19 @@ font-family: 'Source Sans Pro', sans-serif;
 .wraper{
   position: fixed;
   height: 44px;
-  width: 100%;
+  width: 100vw;
   z-index: 999;
  
 }
 .header{
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
 .logo{
   height:2.4rem;
   padding: 7px 0;
-align-self: center;}
+  align-self: center;}
 .menu__list{
     cursor: pointer;
    align-items: center;
@@ -395,6 +395,8 @@ align-self: center;}
     margin: 0;
     padding: 0 40px;
     
+}
+html{background-color: red;
 }
 .menu{
   width: max-content;
@@ -408,7 +410,7 @@ background-color: #000000ba;
 color: white;
 justify-content: center;
 align-items: center;
-width: 100%;
+width: 100vw;
 z-index: 999;
 }
 .call-form{
@@ -463,14 +465,14 @@ text-align: center;
 font-size: 1.8rem;
 }
 .card-body svg{
-  width: 100%;
+  width: 100vw;
 }
 
 .container1 {
   padding-bottom: 10px;
   position: relative;
   justify-content: center;
-  /* width: 100%; */
+  /* width: 100vw; */
   /* max-width: 1160px; */
   margin: 0 20px;
   display: flex;
@@ -638,3 +640,67 @@ footer{
    background-color: #1D1D1F;
   color: #a1a1a6;
 }
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\Start media\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+ @media (max-width: 1100px ){
+  .card:hover ~ .card {
+  position: relative;
+  top: 300px;
+  transition: 0.4s ease-out;
+}
+.card:hover {
+  /* transform: translateX(-10px); */
+  transition: 0.4s ease-out;
+}
+
+
+  .country-card{
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    line-height: 20px;}
+
+  .vertical {
+  width: 35%;
+  height: 10%;
+  border-radius: 0 0 1rem 0 ;
+  position: absolute;
+  top: 0;
+  /* bottom: 40px; */
+  left: 0;
+  writing-mode:horizontal-tb ;
+  margin: 0;
+  padding: 0.5rem;
+
+  /* padding: 3px !important; */
+}
+  .card:not(:first-child) {
+    /* margin-top: -350px; */
+      position: relative;
+  /* left: 0px; */
+  margin: 0  auto;
+  margin-top: -350px ;
+}
+  .container1 {
+    flex-direction: column;
+    align-items: center;
+   }
+   .card {
+   
+  box-sizing: border-box;
+  display: flex;
+  height: 400px;
+  width: 85%;
+  margin: 0 auto;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+
+   }
+   .card:last-child{
+    box-shadow: 0rem 0 3rem #000;
+  
+   }
+  }

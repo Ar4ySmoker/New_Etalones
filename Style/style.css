@@ -196,12 +196,7 @@ select { /* 1 */
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
+
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -291,10 +286,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
+
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
@@ -433,12 +425,7 @@ z-index: 999;
 
   #slider{display: none;}
   #burger__menu{display: none;}
-.main{
-   /* display:block; */
-    /* display: grid;
-    grid-template-rows: repeat(5,1fr);
-    grid-template-columns: repeat(6,1fr); */
-  }
+
 
   .section1{
     /* grid-column: 1/-1;
@@ -467,10 +454,11 @@ z-index: 999;
     /* ----------section2------------ */
 .plus {
    display: flex;
-  gap: 35px;
+  /* gap: 35px; */
 justify-content: center;
 }
 .plus a{
+  padding: 0 10px;
     font-size: 21px;
     line-height: 1.2381;
     font-weight: 400;
@@ -611,30 +599,7 @@ background-size: 10%;
 }
 
 
-  @media (max-width: 1100px ){
-   .container1 {
-    flex-direction: column;
-    align-items: baseline;
-   }
-   .card {
-    width: 100% ;
-   }
-   .card:last-child{
-    box-shadow: 0rem 0 3rem #000;
-   }
-   .vertical {
-    transform: rotate(0);
-   }
-   .card:hover ~ .card {
-  left: 0px;
-  top: -50px;
-  transition: 0.4s ease-out;
-}
-.advantages-1 {
-      grid-template-columns: 1fr;
-
-    }
-  }
+ 
   /* ---------------------- */
   .advantages1{
      box-sizing: border-box;
@@ -696,9 +661,7 @@ background-size: 10%;
     padding-top: 22px;
     
   }
-  .documents{
-   
-  }
+
 #company{
   box-sizing: border-box;
     justify-self: start;
@@ -944,9 +907,7 @@ justify-content: center;
 .anketa-profession input:focus {
     outline-color: rgba(29, 29, 201, 0.612);
 }
-#name {
 
-}
 .anket {
     display: none;
 }
@@ -1019,3 +980,41 @@ footer{
    background-color: #1D1D1F;
   color: #a1a1a6;
 }
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\Start @media\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+ @media (max-width: 1200px ){
+   #prepDocs{
+    padding-left: 35px;
+   }
+   #escortEU{
+    padding-right: 35px;
+   }
+   .plus a{
+        padding: 0 8px;
+    font-size: 20px;
+    line-height: 1.2381;
+    font-weight: 400;
+   }
+  }
+  @media (max-width: 992px ){
+    .plus{
+      margin: auto;
+      flex-direction: column;
+          gap: 60px;
+    text-align: start;
+    }
+    .plus a{padding: 0;}
+     #prepDocs{
+    padding-left: 0;
+   }
+   #escortEU{
+    padding-right: 0;
+   }
+   
+  }
+  @media (max-width: 768px ){}
+  @media (max-width: 480px ){}
+/* \\\\\\\\\\\\\\\\\\\\\\End @media\\\\\\\\\\\\\\\\\\\\\\\\\\ */
