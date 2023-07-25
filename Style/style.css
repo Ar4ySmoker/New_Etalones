@@ -453,6 +453,7 @@ z-index: 999;
    
     /* ----------section2------------ */
 .plus {
+  z-index: 2;
    display: flex;
   /* gap: 35px; */
 justify-content: center;
@@ -464,12 +465,14 @@ justify-content: center;
     font-weight: 400;
 }
 .section2{
+  position: relative;
   height: 84vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .section2 h4{
+  z-index: 2;
    box-sizing: border-box;
   /* color: #ffffff; */
   text-align: center;
