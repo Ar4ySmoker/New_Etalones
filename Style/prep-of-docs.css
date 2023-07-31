@@ -439,16 +439,20 @@ z-index: 999;
    background-repeat: no-repeat;
    background-image: url(../Img/BG/prepOfDocs.jpg);
   }
-
+.scans h2{
+margin: 3rem auto;
+}
   .samples{
     display: flex;
     gap: 100px;
+    flex-wrap: wrap-reverse;
     justify-content: center;
   }
   .sample{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .hand-w-p{display: flex;
     flex-direction: column;
@@ -474,7 +478,109 @@ margin: 0 auto;
   justify-self: center;
      grid-column: 1/-1;
 }
-#explanations2 {
+.h1{
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
-#explanations3 {
+.h1 h1{
+ margin: 2rem auto;
+  width: 80%;
+  font-size: 42px;
+  text-align: center;
+}
+.h1 p{
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font-size: 22px;
+  
+}
+/* -----------------Modal----------------- */
+.modalImgP{
+  /* display: block;
+  position: fixed;
+  z-index: 10;
+  top: 10%;
+  right: 33%; */
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+   background-color: #fbfbfdaf;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: none;
+}
+.modalImgP svg{
+  display: block;
+  position: absolute;
+  right: 55px;
+  top: 55px;
+}
+.modalImgP svg :hover{
+  cursor: pointer;
+}
+
+#passport :hover{
+cursor: pointer;
+}
+.modalImgV{
+  /* display: block;
+  position: fixed;
+  z-index: 10;
+  top: 10%;
+  right: 33%; */
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+   background-color: #fbfbfdaf;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: none;
+}
+.modalImgV svg{
+  display: block;
+  position: absolute;
+  right: 55px;
+  top: 55px;
+}
+.modalImgV svg :hover{
+  cursor: pointer;
+}
+
+#visa :hover{
+cursor: pointer;
+}
+.modalImgPS{
+  /* display: block;
+  position: fixed;
+  z-index: 10;
+  top: 10%;
+  right: 33%; */
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+   background-color: #fbfbfdaf;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: none;
+}
+.modalImgPS svg{
+  display: block;
+  position: absolute;
+  right: 55px;
+  top: 55px;
+}
+.modalImgPS svg :hover{
+  cursor: pointer;
+}
+
+#pesel :hover{
+cursor: pointer;
 }

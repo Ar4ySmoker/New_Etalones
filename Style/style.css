@@ -565,15 +565,7 @@ flex-wrap: wrap;
   
 }
 
-.advantages-right-t {
-  box-sizing: border-box;
-  background-color: rgb(0, 0, 0);
 
-  height: 80vh;
-  position:relative;
-  left:  0;
-  
-}
 .advantages-right-d {
   background-color: black;
 
@@ -582,12 +574,15 @@ flex-wrap: wrap;
   left: 0;
 }
 .advantages-left-t {
+  display: flex;
+  justify-content: center;
+  position: relative;
   background-color: white;
 /* background-image: url(../Img/BG/logo_svg_black_no_p.svg); */
-background-position: center;
-background-position-y: 58%;
-background-repeat: no-repeat;
-background-size: 10%;
+/* background-position: center; */
+/* background-position-y: 58%; */
+/* background-repeat: no-repeat; */
+/* background-size: 10%; */
   height: 80vh;
 
 }
@@ -636,6 +631,7 @@ background-size: 10%;
     width: max-content;
     padding-top: 22px;
     margin: 0 auto;
+   
   }
     .advantages-left-d h4{
     /* grid-column: 1 / -1; */
@@ -722,8 +718,14 @@ background-size: 10%;
 }
 /* ----------------------- */
 .advantages-right-t{
+    /* box-sizing: border-box; */
+  background-color: rgb(0, 0, 0);
+  height: 80vh;
+  position:relative;
+  left:  0;
+  flex-direction: column;
   display: flex;
-   align-content: end;
+   /* align-content: end; */
    justify-content: center;
 }
 .advantages-right-t h4{
@@ -754,19 +756,35 @@ background-size: 10%;
    margin: 0 auto;
  
 }
-#push-peple{
-  align-self: flex-end;
+.push-peple{
+ 
+background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,0.13778011204481788) 0%, rgba(0,0,0,0.8744747899159664) 100%);
+  bottom: 0;
+  /* position: relative; */
+  align-self: center;
   margin-bottom: 65px;
 }
-#push-peple a{
+.push-peple a{
   font-size: 21px;
     line-height: 1.2381;
     font-weight: 400;
 }
-#docs{
-  margin-top: 25px;
+.docs{
+  background-color: #fbfbfd;
+ border: 3px  solid black;
+ border-radius: 0 0 15px 15px;
+ border-top: 0;
+  position: absolute;
+  top: 0;
+  /* right: inherit; */
+  
+  /* margin-top: 25px; */
 }
-#docs a{font-size: 21px;
+.docs a{
+  display: block;
+  height: 100%;
+  font-size: 21px;
     line-height: 1.2381;
     font-weight: 400;}
 
