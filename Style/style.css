@@ -362,13 +362,21 @@ body a:visited{color: #227ED5;}
   position: fixed;
   height: 44px;
   width: 100%;
-  z-index: 999;
+  z-index: 998;
  
 }
 .header{
-  width: 100%;
-  display: flex;
-  justify-content: center;
+ 
+  justify-content: space-between;
+  position: fixed;
+display: flex;
+background-color: #000000ba;
+ backdrop-filter: blur(6px);
+color: white;
+justify-content: center;
+align-items: center;
+width: 100%;
+z-index: 998;
 }
 .logo{
   height:2.4rem;
@@ -391,15 +399,7 @@ align-self: center;}
   z-index: 150;
 }
 .header__menu{
-position: fixed;
-display: flex;
-background-color: #000000ba;
- backdrop-filter: blur(6px);
-color: white;
-justify-content: center;
-align-items: center;
-width: 100%;
-z-index: 999;
+
 }
 .call-form{
   display: flex;
@@ -409,6 +409,7 @@ z-index: 999;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 400;
+  color: white;
 }
 #call-form:visited{
   color: white;
@@ -424,31 +425,42 @@ z-index: 999;
  
 
   #slider{display: none;}
-  #burger__menu{display: none;}
+  #burger{display: none;}
 
 
   /* --------------end header------------- */
+  
+ 
 
 
   .section1{
-    /* grid-column: 1/-1;
-    grid-row: 1/3; */
+    position: relative;
+   display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     background-color: #000;
     background-image: url(../Img/BG/BG_Etalones.png) ;
     background-position: center;
     /* background-size: 100% auto; */
     background-repeat: no-repeat;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-   align-items: flex-end;
+   align-items: flex-end; */
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     
   }
 
   
-  .prim img{
-    margin-bottom: 3rem;
+  .section1 img{
+    box-sizing: border-box;
+
+    position: absolute;
+    bottom: 45px;
+ 
+   margin: 0 auto;
+   left: 0;
+   right: 0;
     
    
   }
@@ -495,6 +507,7 @@ justify-content: center;
 
 /* -------------WORLD-------------------------- */
 .world{
+  /* z-index: 2; */
    display: flex;
     flex-direction: column;
     align-items: center;
@@ -555,9 +568,10 @@ flex-wrap: wrap;
 .advantages-1{
   width: 95vw;
   margin: auto;
+ 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+ 
   gap: 15px;
   justify-content: center;
   box-sizing: border-box;
@@ -602,12 +616,7 @@ background-size: 10%;
 
  
   /* ---------------------- */
-  .advantages1{
-     box-sizing: border-box;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr 5fr 5fr; */
-  }
+  
   .advantages-left-t h4{
     /* grid-column: 1 / -1; */
     text-align: center;
@@ -760,13 +769,13 @@ background-size: 10%;
  
 }
 .push-peple{
- 
-background: rgb(0,0,0);
+ position: absolute;
+
 background: radial-gradient(circle, rgba(0,0,0,0.13778011204481788) 0%, rgba(0,0,0,0.8744747899159664) 100%);
-  bottom: 0;
+  bottom: 50px;
   /* position: relative; */
   align-self: center;
-  margin-bottom: 65px;
+  /* margin-bottom: 65px; */
 }
 .push-peple a{
   font-size: 21px;
@@ -808,7 +817,7 @@ justify-content: center;
 /* ------------------- */
 .advantages-right-d{
   display: flex;
-   align-content: end;
+   align-items: start;
    justify-content: center;
 }
 .advantages-right-d h4{
@@ -872,11 +881,7 @@ justify-content: center;
     flex-direction: column;
     justify-content: center;
 }
-.section8 {
-  /* display: flex; */
-  position: absolute;
-  top: 0;
-}
+
 .wraper-anket1{ 
   position: fixed;
   top: 0;
@@ -901,85 +906,34 @@ justify-content: center;
   position: absolute;
   top: 0;
 }
-.anketa-profession {
-  box-sizing: border-box;
-   padding: 35px;
-   border-radius: 30px;
-   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.183);
-   background-color: white;
-   display: flex;
-   flex-direction: column;
-   gap: 25px;
-   position: relative;
-}
-.anketa-profession img {
-    width: 35%;
-    align-self: center;
-}
-.anketa-profession input {
-    width: 100%;
-    padding: 5px 10px;
-    border-radius: 7px;
-    margin-top: 5px;
-    font-weight: 500;
-    border: 0.5px solid rgba(211, 211, 211, 0.591);
-    transition: all 0.32s ;
-}
-.anketa-profession input:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-.anketa-profession input:focus {
-    outline-color: rgba(29, 29, 201, 0.612);
+
+.mobileMenu{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background-color: #fbfbfd;
+  overflow: hidden;
+  /* margin: auto auto; */
+   position: fixed;
 }
 
-.anket {
-    display: none;
+.mobileMenu li{
+  list-style: none;
+  padding: 25px;
+  font-size: 22px;
+  text-align: center;
+  
 }
-.anket p {
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 16px;
-}
-.switch-btn {
-    display: flex;
-    justify-content: space-between;
-}
-#step-next,
-#step-back
- {
-    cursor: pointer;
-  color: #227ED5;
-  font-size: 1rem;
-    line-height: 1.2381;
-    font-weight: 400;
-}
-.hide{
-  display: none;
-}
-.show {
-    display: flex;
-    flex-direction: column;
 
-}
-#close{
+#closeMenu{
 position: absolute;
-top: 10px;
-right: 10px;
-width: 10%;}
-#close1{
-position: absolute;
-top: 10px;
-right: 10px;
-width: 10%;}
-#cancel1, #submit1{
-  cursor: pointer;
-  color: #227ED5;
-  font-size: 1rem;
-    line-height: 1.2381;
-    font-weight: 400;
+top: 15px;
+right: 15px;
 }
- /* Стили для галочки */
-     
 /* ---------footer------------ */
 footer{
   background-color: #1D1D1F;
@@ -1012,35 +966,39 @@ footer{
 
 
  @media (max-width: 1200px ){
-   #prepDocs{
-    padding-left: 35px;
+   .header li{
+    display: none;
+  }
+   .header{
+    display: flex;
+    justify-content: space-between;
    }
-   #escortEU{
-    padding-right: 35px;
-   }
-   .plus a{
-        padding: 0 8px;
-    font-size: 20px;
-    line-height: 1.2381;
-    font-weight: 400;
-   }
+     #burger{
+      display: flex; 
+      flex-direction: row-reverse;
+      order: 3;
+      padding:0 40px;
+      width: 100px;
+    }
+     .logo{
+      order: 1;
+    }
+    .call-form{
+      width: 100px;
+      order: 2;
+    }
   }
   @media (max-width: 992px ){
-    .plus{
-      margin: auto;
-      flex-direction: column;
-          gap: 60px;
-    text-align: start;
-    }
-    .plus a{padding: 0;}
-     #prepDocs{
-    padding-left: 0;
-   }
-   #escortEU{
-    padding-right: 0;
-   }
    
   }
-  @media (max-width: 768px ){}
-  @media (max-width: 480px ){}
+  @media (max-width: 768px ){
+     
+  }
+  
+  @media (max-width: 480px ){
+    
+  }
+  .show{
+    display: flex;
+  }
 /* \\\\\\\\\\\\\\\\\\\\\\End @media\\\\\\\\\\\\\\\\\\\\\\\\\\ */
