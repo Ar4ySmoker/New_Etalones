@@ -2,27 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="../Style/style.css" />
     <link rel="stylesheet" href="./test.css">
     <link rel="stylesheet" href="../Style/particlesStyle.css">
+    <link rel="stylesheet" href="../Style/modalAnket.css">
     <script src="../Js/jquery.js" defer></script>
-<script src="./test.js"></script>
     <script src="../Js/script.js" defer></script>
     <script src="../Js/anketa-profession.js" defer></script>
     <script src="../Js/call-form.js" defer></script>
     <script src="/html/modal.js" defer></script>
     <script defer src="../node_modules/particles.js/particles.js"></script>
     <script defer src="../Js/particlesSet.js"></script>
+    <script defer src="../Js/modalAnketMultiselect.js"></script>
+    <script defer src="../Js/burgerMenu.js"></script>
   
     <title>EtalonES</title>
   </head>
   <body>
     <div class="wraper">
-      <header class="header">
+      <!-- <header class="header">
         <div class="header__menu">
           <img src="../Img/Logo_single.svg" alt="" class="logo" />
 
@@ -45,7 +47,9 @@
             <img src="../Img/icons/Phone.svg" alt="" />
             <p id="call-form">Позвонить</p>
           </div>
-          <a id="burger__menu">
+       
+        </div>
+           <button id="burger__menu">
             <svg
               width="24"
               height="24"
@@ -68,7 +72,7 @@
                 stroke-width="2"
                 stroke-linecap="round" />
             </svg>
-          </a>
+          </button>
           <div class="header__slider" id="slider">
             <div id="top__burger">
               <button id="close__burger">
@@ -107,22 +111,52 @@
                  <a href="../html/map.html" class="menu__link">Карта</a>
               </li>
 
-             
-
               <li class="list__item slide_item">
                 <a href="" class="menu__link">Вакансии</a>
               </li>
             </ul>
           </div>
-        </div>
+      </header> -->
+      <header class="header">
+          <img src="../Img/Logo_single.svg" alt="" class="logo" />
+                 <nav class="menu">
+            <ul class="menu__list">
+              <li id="home" class="menu__item">
+                <a href="./index.html" class="menu__link">Главная</a>
+              </li>
+              <li id="offers" class="menu__item">
+                 <a href="../html/map.html" class="menu__link">Карта</a>
+              </li>
+
+              
+              <li id="vacancies" class="menu__item">
+                <a href="./works.html" class="menu__link">Вакансии</a>
+              </li>
+              <div class="call-form">
+            <img src="../Img/icons/Phone.svg" alt="" />
+            <p id="call-form">Позвонить</p>
+            </ul>
+           
+        </nav>
+ <div id="burger"><img src="../Img/icons/burger.svg" alt=""></div>
+          </div>
       </header>
+      <div id="mobileMenu" class="hide">
+        <ul>
+          <li class="menu__link" ><a href="./index.html">Главная</a></li>
+          <li class="menu__link"><a href="../html/map.html">Карта</a></li>
+          <li class="menu__link"> <a href="./works.html">Вакансии</a></li>
+          <li class="menu__link"> <a href="./contacts.html">Контакты</a></li>
+        </ul>
+        <img id="closeMenu" src="../Img/icons/close.svg" alt="">
+      </div>
     </div>
     <main class="main">
       <section class="section1">
-        <div class="prim">
+        
           <img src="../Img/BG/Etalones.png" alt="" />
           <!-- <button class="call_form" id="call_form">Заказать звонок</button> -->
-        </div>
+        
       </section>
       <section>
         <div>
@@ -234,8 +268,49 @@
           /></label>
         </div>
         <div class="anket profession">
-          
-          <div class="selectBox" onclick="showCheckboxes()">
+           <div class="createAccount_inner">
+            
+<!--        One ELEMENT of MULTY SELECT  -->
+            <div class="form_label">
+              <span class="form_text">Ваша профессия</span>
+              <div class="multiselect_block">
+                <label for="select-1" class="field_multiselect">Профессия</label>
+
+                <input id="checkbox-1" class="multiselect_checkbox" type="checkbox">
+                <label for="checkbox-1" class="multiselect_label"></label>
+
+                <select id="select-1" class="field_select" name="technology" multiple style="@media (min-width: 768px) { height: calc(4 * 38px)}">
+                  <option value="all">Универсал</option>
+                  <option value="HTML">Каменьщик</option>
+                  <option value="CSS">Плиточник</option>
+                  <option value="JavaScript">Маляр</option>
+                </select>
+                <!-- <span class="field_multiselect_help">You can select several items by pressing <b>Ctrl(or Command)+Element</b></span> -->
+              </div>
+              <span class="error_text"></span>
+            </div>
+    <!--   END  -->        
+           
+            <div class="form_label">
+              <span class="form_text">Your Frameworks</span>
+              <div class="multiselect_block">
+                <label for="select-2" class="field_multiselect">Frameworks</label>
+
+                <input id="checkbox-2" class="multiselect_checkbox" type="checkbox">
+                <label for="checkbox-2" class="multiselect_label"></label>
+
+                <select id="select-2" class="field_select" name="frameworks" multiple style="@media (min-width: 768px) { height: calc(4 * 38px)}">
+                  <option value="React">React</option>
+                  <option value="Vue">Vue</option>
+                  <option value="Angular">Angular</option>
+                  <option value="Ember">Ember</option>
+                </select>
+                <!-- <span class="field_multiselect_help">You can select several items by pressing <b>Ctrl(or Command)+Element</b></span> -->
+              </div>
+              <span class="error_text"></span>
+            </div>  
+          </div>
+          <!-- <div class="selectBox" onclick="showCheckboxes()">
       <select>
         <option>Выберите навыки</option>
       </select>
@@ -261,7 +336,7 @@
             <label for="">Как долго вы работаете в строительстве? </label>
         <input id="lineW1" type="range" value="10" min="0" max="50" id="fill1" class="lineW" >
         <span class="lineWeightValue" id="lineWeightValue1">100</span>
-           </div>
+           </div> -->
         </div>
         <div class="anket skils">
           <label>

@@ -467,6 +467,7 @@ width: 1200px;
   gap: 20px; /* Промежуток между ячейками */
 }
 .grid-itemNews{
+  position:relative ;
   height: 400px;
   box-sizing: border-box;
   background-color: #f2f2f2;
@@ -479,6 +480,7 @@ width: 1200px;
 }
 .grid-itemNews h5{
   font-size: 1.2rem;
+  margin: 0;
 }
 .archive{
   margin-top: 3rem;
@@ -489,4 +491,12 @@ width: 1200px;
   width: 100px;
   font-weight: bold;
   text-align: center;
+}
+.date{
+  position: absolute;
+  bottom: 0;
+}
+.test{
+  display: flex;
+  flex-direction: column;
 }

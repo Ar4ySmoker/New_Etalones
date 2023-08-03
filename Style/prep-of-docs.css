@@ -454,6 +454,26 @@ margin: 3rem auto;
     align-items: center;
     text-align: center;
   }
+
+  .sample img:hover{
+   cursor: pointer;
+  }
+ 
+ /* .sample {
+  overflow: hidden;
+}
+
+.sample img {
+  
+  transition: transform 2s;
+}
+
+.sample img:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+  transform-origin: center;
+} */
+  
   .hand-w-p{display: flex;
     flex-direction: column;
     justify-content: center;
@@ -523,9 +543,8 @@ margin: 0 auto;
   cursor: pointer;
 }
 
-#passport :hover{
-cursor: pointer;
-}
+
+
 .modalImgV{
   /* display: block;
   position: fixed;

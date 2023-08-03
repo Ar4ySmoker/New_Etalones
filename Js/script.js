@@ -2,9 +2,11 @@ $(document).ready(() => {
   $("#burger__menu").click(function () {
     $("#slider").toggleClass("show");
   });
+
   $("#close__burger").click(function () {
     $("#slider").toggleClass("show");
   });
+  
   $(".header__menu a").on("click", function () {
     let href = $(this).attr("href");
 
@@ -20,6 +22,7 @@ $(document).ready(() => {
 
     return false;
   });
+  console.log("wrk");
   $(".spjnz a").on("click", function () {
     let href = $(this).attr("href");
 

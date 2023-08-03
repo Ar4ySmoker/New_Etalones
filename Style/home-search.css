@@ -357,6 +357,7 @@ body a:visited{color: #227ED5;}
   max-width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
+  margin: 25px auto;
 }
 .wraper{
   position: fixed;
@@ -444,6 +445,7 @@ body{
   .post{
     display: flex;
     gap: 3rem;
+    
   }
 
   /* -----------------Slider----------------- */
