@@ -404,7 +404,7 @@ body a:visited {
   gap: 6px;
   font-size: clamp(1vw, 22px, 3vw);
 }
- .call-form img{
+.callImg{
     width: 1.2vw ;
   }
 #call-form {
@@ -445,13 +445,17 @@ body a:visited {
   overflow: hidden;
   /* margin: auto auto; */
   position: fixed;
-}
 
+}
+.mobileMenu ul{
+   margin-top: 30%;
+}
 .mobileMenu li {
   list-style: none;
   padding: 25px;
   font-size: 22px;
   text-align: center;
+ 
 }
 
 #closeMenu {
@@ -530,6 +534,7 @@ section{box-sizing: border-box;}
   /* transform: translateY(-50px); */
   width: 300px;
   transition: 0.4s ease-out;
+  cursor: pointer;
 }
 
 .card:hover ~ .card {
@@ -662,6 +667,7 @@ svg {
 
   /* padding: 3px !important; */
 }
+
 /* ---------footer------------ */
 footer {
   background-color: #1d1d1f;
@@ -768,10 +774,15 @@ display: flex;
   .call-form {
     width: 100px;
     order: 2;
-    font-size: clamp(4vw, 24px, 5vw);
+    font-size: clamp(3svw, 24px, 5vw);
   }
-  .call-form img{
-    width: 3vw ;
+ 
+  #call-form{
+    width: 120%;
+  }
+  .callImg{
+    transform: scale(2);
+    padding-right: 5px;
   }
 }
 @media (max-width: 992px) {
