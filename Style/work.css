@@ -713,6 +713,9 @@ display: flex;
   margin: 50px;
   position: relative;
 }
+.card-body h3{
+padding: 7rem 0;
+}
 .card:hover{
    width: 55%;
 
