@@ -448,6 +448,7 @@ margin: 3rem auto;
     flex-wrap: wrap-reverse;
     justify-content: center;
   }
+  
   .sample{
     display: flex;
     flex-direction: column;
@@ -455,8 +456,10 @@ margin: 3rem auto;
     text-align: center;
   }
 
-  .sample img:hover{
+  .sample :hover{
    cursor: pointer;
+   width: 100px;
+   transition: all 2s;
   }
  
  /* .sample {

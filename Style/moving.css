@@ -434,463 +434,111 @@ z-index: 999;
   #slider{display: none;}
   #burger__menu{display: none;}
 
+  /* -----------body--------------------- */
+.main{
+/* width: 100%; */
+display: flex;
+flex-direction: column;
+}
+  h1{
+  font-size: 3rem;
+text-align: center;
+    width: 800px;
+    margin: 25px auto;
+    text-align: center;
+    }
+h2{
+  text-align: center;
+}
+h3{
+ text-align: center;
+font-size: 2.5rem;
+    }
  .moving{
    display: flex;
     flex-direction: column;
     align-items: center;
   height: 85vh;
+  width: 100vw;
   position: relative;
   background-color: #000000;
   margin-bottom: 15px;
-  background-image: url(../Img/BG/road.jpg);
+  background-image: url(../Img/BG/randy-fath.jpg);
   background-size: cover;
-    background-position: 50% 50%;
+    background-position: 10% 100%;
     background-repeat: no-repeat;
-
-
 }
-.moving img{
-  box-sizing: border-box;
-  width: 100%;
-  padding-top: 10%;
-  height: 85vh;
-  position: absolute;
-  top: 0;
-}
-.moving h1{
-  margin-top: 4rem;
-  color: white;
-  text-align: center;
-  /* padding-top: 3rem; */
-    font-size: 32px;
-    line-height: 1.5;
-    font-weight: 400;
-    letter-spacing: 0em;
-   
-}
-.moving a{
-  cursor: pointer;
-  color: #227ED5;
-  font-size: 21px;
-    line-height: 1.2381;
-    font-weight: 400;
-}
-/* ----------------Section4-------------- */
-.section-advantages {
-  width: 100%;
+.sectionH1{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.advantages{
-box-sizing: border-box;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-}
-.advantages-1a{
-  font-size: 4rem;
-  font-weight: 600;
-  text-align: center;
-
-}
-.advantages-1{
-  width: 95vw;
-  margin: auto;
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr; */
-  /* grid-template-rows: 1fr 1fr; */
-  gap: 15px;
-  justify-content: center;
-  box-sizing: border-box;
-  
-}
-.advantages-shadow {
-   box-shadow: inset 0rem 0 3rem #00000022;
-  
+.slider{
+width: 800px;
+height: 400px;
+margin: 0 auto;
 }
 
-.advantages-right-t {
-  box-sizing: border-box;
-  background-color: rgb(0, 0, 0);
-
-  height: 80vh;
-  position:relative;
-  left:  0;
-  
-}
-.advantages-right-d {
-  background-color: black;
-
-  height: 80vh;
-  position:relative;
-  left: 0;
-}
-.advantages-left-t {
-  background-color: white;
-  height: 80vh;
-
-}
-.advantages-left-d {
-  background-color: white;
-/* background-image: url(../Img/BG/logo_svg_black_no_p.svg); */
-background-position: center;
-background-position-y: 58%;
-background-repeat: no-repeat;
-background-size: 10%;
-  height: 80vh;
-}
-
-.vertical {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;;
-  transform: rotate(-90deg);
-  padding: 3px !important;
-}
-  @media (max-width: 1100px ){
-   .container1 {
-    flex-direction: column;
-    align-items: baseline;
-   }
-   .card {
-    width: 100% ;
-   }
-   .card:last-child{
-    box-shadow: 0rem 0 3rem #000;
-   }
-   .vertical {
-    transform: rotate(0);
-   }
-   .card:hover ~ .card {
-  left: 0px;
-  top: -50px;
-  transition: 0.4s ease-out;
-}
-.advantages-1 {
-      grid-template-columns: 1fr;
-
-    }
-  }
-  /* ---------------------- */
-  .advantages1{
-     box-sizing: border-box;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr 5fr 5fr; */
-  }
-  .advantages-left-t h4{
-    text-align: center;
-    padding-top: 3rem;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0em;
-  }
-  .advantages-left-t h5{
-
-   text-align: center;
-    /* margin-top: 10px; */
-    font-size: 2rem;
-    line-height: 1.2381;
-    font-weight: 400;
-    letter-spacing: 0.016em;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .advantages-left-t p{
-  padding-top: 3rem;
-  width: 95%;
+ .container{
+  max-width: 1160px;
+  padding: 0 20px;
   margin: 0 auto;
-  text-align: center;
-  }
-    .advantages-left-d h4{
-    /* grid-column: 1 / -1; */
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 10px;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-    letter-spacing: 0em;
-  }
-  .advantages-left-d h5{
-    grid-column: 1 / -1;
-   text-align: center;
-    /* margin-top: 10px; */
-    font-size: 21px;
-    line-height: 1.2381;
-    font-weight: 400;
-    letter-spacing: 0.016em;
-    width: 80%;
-    margin: 0 auto;
-  }
-  .advantages-left-d a{
-  display: block;
-    width: max-content;
-    padding-top: 22px;
-    
-  }
-  .documents{
-   
-  }
-#company{
-  box-sizing: border-box;
-    justify-self: start;
-    align-self: flex-end;
-    text-align: end;
-    padding: 5px  25px 0 0;
-    height: 70%;
-    width: 60%;
-    box-shadow: 0rem 0 1rem #00000022;
-    font-size: 1.2rem;
-    font-weight: 600;
- 
 }
 
-#company:hover{
-  width: 90% ;
-  /* font-size: 24px; */
-  transition: all 0.5s;
- 
-}
-
-#people{
-  font-size: 1.2rem;
-    font-weight: 600;
-  box-sizing: border-box;
-  padding: 5px 0 0 25px;
-  justify-self: flex-end;
-  align-self: flex-end;
-  height: 70%;
-  width: 60%;
-  box-shadow: 0rem 0 1rem #00000022;
-}
-#people:hover{
- width: 90%;
-  transition: all 0.5s;
-}
-#copy-docs{
-  font-size: 1.2rem;
-    font-weight: 600;
-  box-sizing: border-box;
-  padding-top: 5px;
-  grid-column: 1 / -1;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-  align-self: flex-end;
-  height: 60%;
-  width: 40%;
-  box-shadow: 0rem 0 1rem #00000022;
-  justify-self: center;
-}
-#copy-docs:hover{
-   transition: all 0.5s;
-  height: 100%;
-}
-/* ----------------------- */
-.advantages-right-t{
+/* ------------------section-documents------------------ */
+.section-documents{
   display: flex;
-   align-content: end;
-   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.advantages-right-t h4{
-  box-sizing: border-box;
-  color: #ffffff;
+.prepDocsSteps{
+  display: flex;
+  align-content: flex-end;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.step{
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
-    margin-top: 58px;
-    margin-bottom: 10px;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-}
-.advantages-right-t h5{
-  color: #ffffff;
-  text-align: center;
-    margin-top: 10px;
-   font-size: 21px;
-    line-height: 1.2381;
-    font-weight: 400;
-    letter-spacing: 0.016em;
-    width: 80%;
-    margin: 0 auto;
-}
-.advantages-right-t a{
-  display: block;
-  width: max-content;
-  padding-top: 22px;
-   margin: 0 auto;
- 
-}
-#push-peple{
-  align-self: flex-start;
-  margin-bottom: 65px;
-}
-#push-peple p{
-  color: #ffffff;
- text-align: center;
-    /* margin-top: 10px; */
-    font-size: 1rem;
-    line-height: 1.2381;
-    font-weight: 400;
-    letter-spacing: 0.016em;
-    width: 90%;
-    margin: 0 auto;
-}
-#docs{
-  margin-top: 25px;
-}
-#docs a{font-size: 21px;
-    line-height: 1.2381;
-    font-weight: 400;}
+  width:17%;
+  border-radius: 15px;
 
-#news{
-margin-top: 25px;
-display: flex;
-flex-direction: column;
-}
-#news a{
-font-size: 21px;
-    line-height: 1.2381;
-    font-weight: 400;
-}
-.news{display: flex;
-  gap: 25px;
-justify-content: center;
-}
-/* ------------------- */
-.advantages-right-d{
-  display: flex;
-   align-content: end;
-   justify-content: center;
-}
-.advantages-right-d h4{
-  box-sizing: border-box;
-  color: #ffffff;
-  text-align: center;
-    margin-top: 58px;
-    margin-bottom: 10px;
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 600;
-}
-.advantages-right-d h5{
-  color: #ffffff;
-  text-align: center;
-    margin-top: 10px;
-   font-size: 21px;
-    line-height: 1.2381;
-    font-weight: 400;
-    letter-spacing: 0.016em;
-    width: 80%;
-    margin: 0 auto;
-}
-.advantages-right-d a{
-  display: block;
-  width: max-content;
-  padding-top: 22px;
- 
- 
-}
-.contacts{
-  display: flex;
-  gap: 25px;
-justify-content: center;
-}
-.contacts a{font-size: 21px;
-    line-height: 1.2381;
-    font-weight: 400;
+background: radial-gradient(circle, rgba(0,0,0,0.13778011204481788) 0%, rgba(0,0,0,0.19940476190476186) 100%);}
+.step p{
+  width: 120px;
 }
 
-/* --------form------------- */
-.section8 {
-  /* display: flex; */
-  position: absolute;
-  top: 0;
+/* -----------section-travel------------------ */
+.section-travel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.wraper-anket1{ 
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-   background-color: #fbfbfd;
-   display: flex;
-   justify-content: center;
+/* -----------secrion-money------------- */
+.section-money{
+  display: flex;
+  flex-direction: column;
    align-items: center;
-   display: none;
+   justify-content: center;
 }
-.section-1 {
-     height: 100vh;
-    /* max-width: 375px; */
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.money h4{
+  text-align: center;
 }
-.section9 {
-  /* display: flex; */
-  position: absolute;
-  top: 0;
+.payMoney{
+  justify-content: center;
+  display: flex;
+ flex-wrap: wrap;
+  gap: 2rem;
 }
-.anketa-profession {
-  box-sizing: border-box;
-   padding: 35px;
-   border-radius: 30px;
-   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.183);
-   background-color: white;
-   display: flex;
-   flex-direction: column;
-   gap: 25px;
-   position: relative;
-}
-.anketa-profession img {
-    width: 35%;
-    align-self: center;
-}
-.anketa-profession input {
-    width: 100%;
-    padding: 5px 10px;
-    border-radius: 7px;
-    margin-top: 5px;
-    font-weight: 500;
-    border: 0.5px solid rgba(211, 211, 211, 0.591);
-    transition: all 0.32s ;
-}
-.anketa-profession input:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-.anketa-profession input:focus {
-    outline-color: rgba(29, 29, 201, 0.612);
-}
-.switch-btn {
-    display: flex;
-    justify-content: space-between;
-}
-.hide{
-  display: none;
-}
-.show {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.anket p {
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 16px;
-}
-#close1{
-position: absolute;
-top: 10px;
-right: 10px;
-width: 10%;}
-#cancel1, #submit1{
-  cursor: pointer;
-  color: #227ED5;
-  font-size: 1rem;
-    line-height: 1.2381;
-    font-weight: 400;
+.number{
+  width: 200px;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 /* ---------footer------------ */
 footer{

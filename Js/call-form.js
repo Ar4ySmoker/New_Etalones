@@ -6,10 +6,10 @@ $(document).ready(function(){
         $("body").css("overflow-y", "hidden");
 })
 
-$("#close1, #cancel1").click(()=> {
-    $(".wraper-anket1").fadeOut(500, function() {
-        $(".wraper-anket1").css("display", "none");
-        $("body").css("overflow-y", "auto");
-    });
-})
+$("#closeAnket1").click(() => {
+  $(".wraper-anket1").fadeOut(500, function () {
+    $(".wraper-anket1").css("display", "none");
+    $("body").css("overflow-y", "auto");
+  });
+});
 })

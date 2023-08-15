@@ -19,60 +19,14 @@
     <script defer src="../Js/particlesSet.js"></script>
     <script defer src="../Js/modalAnketMultiselect.js"></script>
     <script defer src="../Js/burgerMenu.js"></script>
+<script defer src="../Js/eMailJs.js"></script>
+   
+
   
     <title>EtalonES</title>
   </head>
   <body>
-    <div class="wraper">
-      <!-- <header class="header">
-        <div class="header__menu">
-          <img src="../Img/Logo_single.svg" alt="" class="logo" />
-
-          <nav class="menu">
-            <ul class="menu__list">
-              <li id="home" class="menu__item">
-                <a href="./index.html" class="menu__link">Главная</a>
-              </li>
-              <li id="offers" class="menu__item">
-                 <a href="../html/map.html" class="menu__link">Карта</a>
-              </li>
-
-              
-              <li id="vacancies" class="menu__item">
-                <a href="./works.html" class="menu__link">Вакансии</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="call-form">
-            <img src="../Img/icons/Phone.svg" alt="" />
-            <p id="call-form">Позвонить</p>
-          </div>
-       
-        </div>
-           <button id="burger__menu">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M5 7H19"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linecap="round" />
-              <path
-                d="M5 12H19"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linecap="round" />
-              <path
-                d="M5 17H19"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linecap="round" />
-            </svg>
-          </button>
+    <div class="wraper">     
           <div class="header__slider" id="slider">
             <div id="top__burger">
               <button id="close__burger">
@@ -116,10 +70,10 @@
               </li>
             </ul>
           </div>
-      </header> -->
+       
       <header class="header">
-          <img src="../Img/Logo_single.svg" alt="" class="logo" />
-                 <nav class="menu">
+        <img src="../Img/Logo_single.svg" alt="" class="logo" />
+        <nav class="menu">
             <ul class="menu__list">
               <li id="home" class="menu__item">
                 <a href="./index.html" class="menu__link">Главная</a>
@@ -127,19 +81,18 @@
               <li id="offers" class="menu__item">
                  <a href="../html/map.html" class="menu__link">Карта</a>
               </li>
-
-              
               <li id="vacancies" class="menu__item">
                 <a href="./works.html" class="menu__link">Вакансии</a>
               </li>
               <div class="call-form">
             <img src="../Img/icons/Phone.svg" alt="" />
-            <p id="call-form">Позвонить</p>
+            <p id="call-form">Позвонить</p></div>
             </ul>
-           
         </nav>
- <div id="burger"><img src="../Img/icons/burger.svg" alt=""></div>
-          </div>
+        <div id="burger">
+          <img src="../Img/icons/burger.svg" alt="">
+        </div>
+         
       </header>
       <div id="mobileMenu" class="hide">
         <ul>
@@ -151,6 +104,7 @@
         <img id="closeMenu" src="../Img/icons/close.svg" alt="">
       </div>
     </div>
+    
     <main class="main">
       <section class="section1">
         
@@ -247,13 +201,13 @@
     <!--Start anket  -->
     <div class="wraper-anket"> 
     <div class="section section8">
-      <form class="anketa-profession" action="">
+      <form  class="anketa-profession" action="">
         <img src="../Img/icons/close.svg" alt="" id="close" />
         <img src="../Img/Group 2.svg" alt="" />
         <div class="anket name-phone-age show">
           <p>Личные данные</p>
-          <label> <input id="name" type="text" placeholder="Имя" /> </label>
-          <label for=""> <input type="tel" placeholder="Телефон" /> </label>
+          <label> <input id="name" type="text" placeholder="Имя" name="person" /> </label>
+          <label for=""> <input type="text" placeholder="Телефон" /> </label>
           <label for=""> <input type="date" placeholder="дата" /> </label>
         </div>
 
@@ -272,88 +226,30 @@
             
 <!--        One ELEMENT of MULTY SELECT  -->
             <div class="form_label">
-              <span class="form_text">Ваша профессия</span>
-              <div class="multiselect_block">
-                <label for="select-1" class="field_multiselect">Профессия</label>
-
-                <input id="checkbox-1" class="multiselect_checkbox" type="checkbox">
-                <label for="checkbox-1" class="multiselect_label"></label>
-
-                <select id="select-1" class="field_select" name="technology" multiple style="@media (min-width: 768px) { height: calc(4 * 38px)}">
-                  <option value="all">Универсал</option>
-                  <option value="HTML">Каменьщик</option>
-                  <option value="CSS">Плиточник</option>
-                  <option value="JavaScript">Маляр</option>
-                </select>
-                <!-- <span class="field_multiselect_help">You can select several items by pressing <b>Ctrl(or Command)+Element</b></span> -->
-              </div>
-              <span class="error_text"></span>
+             
             </div>
     <!--   END  -->        
            
             <div class="form_label">
-              <span class="form_text">Your Frameworks</span>
-              <div class="multiselect_block">
-                <label for="select-2" class="field_multiselect">Frameworks</label>
-
-                <input id="checkbox-2" class="multiselect_checkbox" type="checkbox">
-                <label for="checkbox-2" class="multiselect_label"></label>
-
-                <select id="select-2" class="field_select" name="frameworks" multiple style="@media (min-width: 768px) { height: calc(4 * 38px)}">
-                  <option value="React">React</option>
-                  <option value="Vue">Vue</option>
-                  <option value="Angular">Angular</option>
-                  <option value="Ember">Ember</option>
-                </select>
-                <!-- <span class="field_multiselect_help">You can select several items by pressing <b>Ctrl(or Command)+Element</b></span> -->
-              </div>
-              <span class="error_text"></span>
+             <select multiple="multiple" id="admission" name="admission[]" id="select" class="select">
+  <option disabled>Выберите</option>
+  <option value="XXX1">XXX1</option>
+  <option value="XXX2">XXX2</option>
+  <option value="XXX3">XXX3</option>
+  <option value="XXX4">XXX4</option>
+</select>
             </div>  
           </div>
-          <!-- <div class="selectBox" onclick="showCheckboxes()">
-      <select>
-        <option>Выберите навыки</option>
-      </select>
-      <div class="overSelect"></div>
-    </div>
-    <div id="checkboxes">
-      <label for="one">
-        <input type="checkbox" id="one" />Вязка арматуры</label>
-      <label for="two">
-        <input type="checkbox" id="two" />Заливка бетона</label>
-      <label for="three">
-        <input type="checkbox" id="three" />Черновая кладка</label>
-    </div>
-          
-           <div class="lineWeightBar">
-            <label for="">Как долго вы работаете в строительстве? </label>
-        <input id="lineW" type="range" value="10" min="0" max="50" id="fill" class="lineW" >
-        <span class="lineWeightValue" id="lineWeightValue">100</span>
-           </div>
-           
-          
-          <div class="lineWeightBar">
-            <label for="">Как долго вы работаете в строительстве? </label>
-        <input id="lineW1" type="range" value="10" min="0" max="50" id="fill1" class="lineW" >
-        <span class="lineWeightValue" id="lineWeightValue1">100</span>
-           </div> -->
+    
         </div>
         <div class="anket skils">
-          <label>
-            <input type="text" placeholder="Водительское удостоверение"
-          /></label>
-          <label> <input type="text" placeholder="Знание языков" /></label>
-        </div>
-        <div class="anket work-location">
-          <label>
-            <input type="text" placeholder="Ваше местоположение"
-          /></label>
-          <label>
-            <input type="number" placeholder="Когда готовы выезжать?"
-          /></label>
-          <label>
-            <input type="number" placeholder="Где предпочитаете работать?"
-          /></label>
+          <select multiple="multiple" id="admission" name="admission[]" id="select" class="select">
+  <option disabled>Выберите</option>
+  <option value="XXX1">XXX1</option>
+  <option value="XXX2">XXX2</option>
+  <option value="XXX3">XXX3</option>
+  <option value="XXX4">XXX4</option>
+</select>
         </div>
         <div class="switch-btn">
           <div><p class="hide" id="step-back">< Назад</p></div>
@@ -365,22 +261,37 @@
     </div>
     <!-- End anket -->
 
-     <!--Start anket  -->
-    <div class="wraper-anket1"> 
+     <!--Анкета "позвонить"  -->
+    <div class="wraper-anket1" id="anketWrapper"> 
     <div class="section-1 section9">
-      <form class="anketa-profession" action="">
-        <img src="../Img/icons/close.svg" alt="" id="close1" />
-        <img src="../Img/Group 2.svg" alt="" />
-        <div class="anket name-phone-age show">
-          <p>Личные данные</p>
-          <label> <input id="name1" type="text" placeholder="Имя" /> </label>
-          <label for=""> <input type="tel" placeholder="Телефон" /> </label>
-        </div>
-        <div class="switch-btn">
-          <div><p class="" id="cancel1">< Закрыть</p></div>
-          <div><p  id="submit1">Отправить ></p></div>
-        </div>
-      </form>
+   
+       <form id="form" class="anketa-profession">
+  
+       <div class="field">
+           <label for="person">Имя</label>
+             <input type="text" name="person" id="person">
+       </div>
+  <div class="field">
+    <label for="phone">Номер телефона</label>
+    <input type="text" name="phone" id="phone">
+  </div>
+  <div class="field">
+    <label for="profesion">Профессия</label>
+    <input type="text" name="profesion" id="profesion">
+  </div>
+
+  <input type="submit" id="button" value="Отправить" >
+  <img id="closeAnket1" src="../Img/icons/close.svg" alt="">
+</form>
+
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('2ZIyu-7ULfWbAXi5w')
+</script>
+
     </div>
     </div>
     <!-- End anket -->

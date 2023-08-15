@@ -22,6 +22,7 @@ html {
  */
 
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -398,9 +399,7 @@ align-self: center;}
   width: max-content;
   z-index: 150;
 }
-.header__menu{
 
-}
 .call-form{
   display: flex;
   gap: 6px;
@@ -468,7 +467,7 @@ align-self: center;}
    
     /* ----------section2------------ */
 .plus {
-  z-index: 2;
+  /* z-index: 2; */
    display: flex;
   /* gap: 35px; */
 justify-content: center;
@@ -487,7 +486,7 @@ justify-content: center;
   align-items: center;
 }
 .section2 h4{
-  z-index: 2;
+  /* z-index: 2; */
    box-sizing: border-box;
   /* color: #ffffff; */
   text-align: center;
@@ -770,9 +769,10 @@ background-size: 10%;
 }
 .push-peple{
  position: absolute;
-
+backdrop-filter: blur(6px);
 background: radial-gradient(circle, rgba(0,0,0,0.13778011204481788) 0%, rgba(0,0,0,0.8744747899159664) 100%);
-  bottom: 50px;
+  bottom: 0;
+  border-radius: 15px;
   /* position: relative; */
   align-self: center;
   /* margin-bottom: 65px; */
@@ -781,11 +781,13 @@ background: radial-gradient(circle, rgba(0,0,0,0.13778011204481788) 0%, rgba(0,0
   font-size: 21px;
     line-height: 1.2381;
     font-weight: 400;
+    padding-bottom: 50px;
 }
 .docs{
-  background-color: #fbfbfd;
- border: 3px  solid black;
- border-radius: 0 0 15px 15px;
+  background-color: radial-gradient(circle, rgba(0,0,0,0.13778011204481788) 0%, rgba(0,0,0,0.8744747899159664) 80%);
+  backdrop-filter: blur(6px);
+ /* border: 3px  solid black; */
+ border-radius: 15px;
  border-top: 0;
   position: absolute;
   top: 0;
@@ -934,6 +936,13 @@ position: absolute;
 top: 15px;
 right: 15px;
 }
+#closeAnket1{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+}
+
 /* ---------footer------------ */
 footer{
   background-color: #1D1D1F;
