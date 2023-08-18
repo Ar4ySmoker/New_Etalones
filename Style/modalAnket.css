@@ -16,10 +16,7 @@
    gap: 25px;
    position: relative;
 }
-.anketa-profession img {
-    width: 35%;
-    align-self: center;
-}
+
 .anketa-profession input {
     width: 95%;
     padding: 5px 10px;

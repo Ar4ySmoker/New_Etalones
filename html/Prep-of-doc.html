@@ -5,57 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etalones</title>
     <link rel="stylesheet" href="../Style/prep-of-docs.css" />
-    <script defer src="../Js/jquery.js"></script>
+    <link rel="stylesheet" href="../Style/modalAnket.css">
+     <script src="../Js/jquery.js" defer></script>
+    <script src="../Js/script.js" defer></script>
+    <script src="../Js/anketa-profession.js" defer></script>
+    <script src="../Js/call-form.js" defer></script>
+    <script src="/html/modal.js" defer></script>
+    <script defer src="../Js/modalAnketMultiselect.js"></script>
+    <script defer src="../Js/burgerMenu.js"></script>
+<script defer src="../Js/eMailJs.js"></script>
     <script defer src="../Js/modalImg.js"></script>
   </head>
   <body>
-    <div class="wraper">
-      <header class="header">
-        <div class="header__menu">
-          <img src="../Img/Logo_single.svg" alt="" class="logo" />
-
-          <nav class="menu">
-            <ul class="menu__list">
-              <li id="home" class="menu__item">
-                <a href="./index.html" class="menu__link">Главная</a>
-              </li>
-              <li id="offers" class="menu__item">
-                 <a href="../html/map.html" class="menu__link">Карта</a>
-              </li>
-
-              <li id="vacancies" class="menu__item">
-                <a href="./works.html" class="menu__link">Вакансии</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="call-form">
-            <img src="../Img/icons/Phone.svg" alt="" />
-            <p id="call-form">Позвонить</p>
-          </div>
-          <a id="burger__menu">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M5 7H19"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linecap="round" />
-              <path
-                d="M5 12H19"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linecap="round" />
-              <path
-                d="M5 17H19"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linecap="round" />
-            </svg>
-          </a>
+    <div class="wraper">     
           <div class="header__slider" id="slider">
             <div id="top__burger">
               <button id="close__burger">
@@ -99,8 +61,39 @@
               </li>
             </ul>
           </div>
+       
+      <header class="header">
+        <img src="../Img/Logo_single.svg" alt="" class="logo" />
+        <nav class="menu">
+            <ul class="menu__list">
+              <li id="home" class="menu__item">
+                <a href="./index.html" class="menu__link">Главная</a>
+              </li>
+              <li id="offers" class="menu__item">
+                 <a href="../html/map.html" class="menu__link">Карта</a>
+              </li>
+              <li id="vacancies" class="menu__item">
+                <a href="./works.html" class="menu__link">Вакансии</a>
+              </li>
+              <div class="call-form">
+            <img class="callImg"  src="../Img/icons/Phone.svg" alt="" />
+            <p id="call-form">Позвонить</p></div>
+            </ul>
+        </nav>
+        <div id="burger">
+          <img src="../Img/icons/burger.svg" alt="">
         </div>
+         
       </header>
+      <div id="mobileMenu" class="hide">
+        <ul>
+          <li class="menu__link" ><a href="./index.html">Главная</a></li>
+          <li class="menu__link"><a href="../html/map.html">Карта</a></li>
+          <li class="menu__link"> <a href="./works.html">Вакансии</a></li>
+          <li class="menu__link"> <a href="./contacts.html">Контакты</a></li>
+        </ul>
+        <img id="closeMenu" src="../Img/icons/close.svg" alt="">
+      </div>
     </div>
     <main>
       <div class="mainImg"></div>
@@ -119,7 +112,7 @@
       </div>
       <div class="scans">
         <h2>Примеры сканов</h2>
-        <div class="samples">
+        <div class="samples container">
           <div class="sample" id="passport">
           <img src="../Img/svg/pasport.svg" alt="passport">
             <p>Скан Паспорта</p>
@@ -186,5 +179,13 @@
   <path fill-rule="evenodd" clip-rule="evenodd" d="M55 27.5C55 42.6877 42.6877 55 27.5 55C12.3122 55 0 42.6877 0 27.5C0 12.3122 12.3122 0 27.5 0C42.6877 0 55 12.3122 55 27.5ZM5.01707 27.5C5.01707 39.917 15.083 49.983 27.5 49.983C39.917 49.983 49.983 39.917 49.983 27.5C49.983 15.083 39.917 5.01707 27.5 5.01707C15.083 5.01707 5.01707 15.083 5.01707 27.5Z" fill="#0F0F0F"/>
 </svg>
     </div>
+      <footer>
+     <div class="footer-flex"> <img class="logo" src="../Img/Logo_single.svg"  alt=""><img src="../Img/icons/Arow-right.svg" alt="">
+     <p>Потдержка</p>
+     <img src="../Img/icons/Arow-right.svg" alt=""> </div>
+     <hr>
+     <div id="footer-desc"><p>© Etalones, 2023 г. Все права защищены.</p></div>
+     <div class="hrefs"><a href="">Политика конфиденциальности |</a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a></div>   
+      </footer>
   </body>
 </html>

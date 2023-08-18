@@ -2,70 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap"
       rel="stylesheet" />
 
     <link rel="stylesheet" href="../Style/contats.css" />
+      <link rel="stylesheet" href="../Style/particlesStyle.css">
+    <link rel="stylesheet" href="../Style/modalAnket.css">
     <script src="../Js/jquery.js" defer></script>
-    <script src="./test.js"></script>
-    <!-- <script src="../Js/script.js" defer></script> -->
+    <script src="../Js/script.js" defer></script>
     <script src="../Js/anketa-profession.js" defer></script>
     <script src="../Js/call-form.js" defer></script>
     <script src="/html/modal.js" defer></script>
-    <link rel="stylesheet" href="./test.css" />
+    <script defer src="../node_modules/particles.js/particles.js"></script>
+    <script defer src="../Js/particlesSet.js"></script>
+    <script defer src="../Js/modalAnketMultiselect.js"></script>
+    <script defer src="../Js/burgerMenu.js"></script>
+<script defer src="../Js/eMailJs.js"></script>
 
     <title>EtalonES</title>
   </head>
   <body>
-    <div class="wraper">
-      <header class="header">
-        <div class="header__menu">
-          <img src="../Img/Logo_single.svg" alt="" class="logo" />
-
-          <nav class="menu">
-            <ul class="menu__list">
-              <li id="home" class="menu__item">
-                <a href="./index.html" class="menu__link">Главная</a>
-              </li>
-              <li id="offers" class="menu__item">
-                <a href="../html/map.html" class="menu__link">Карта</a>
-              </li>
-
-              <li id="vacancies" class="menu__item">
-                <a href="./works.html" class="menu__link">Вакансии</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="call-form">
-            <img src="../Img/icons/Phone.svg" alt="" />
-            <p id="call-form">Позвонить</p>
-          </div>
-          <a id="burger__menu">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M5 7H19"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linecap="round" />
-              <path
-                d="M5 12H19"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linecap="round" />
-              <path
-                d="M5 17H19"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linecap="round" />
-            </svg>
-          </a>
+    <div class="wraper">     
           <div class="header__slider" id="slider">
             <div id="top__burger">
               <button id="close__burger">
@@ -101,7 +60,7 @@
                 <a href="" class="menu__link">Главная</a>
               </li>
               <li class="list__item slide_item">
-                <a href="../html/map.html" class="menu__link">Карта</a>
+                 <a href="../html/map.html" class="menu__link">Карта</a>
               </li>
 
               <li class="list__item slide_item">
@@ -109,8 +68,39 @@
               </li>
             </ul>
           </div>
+       
+      <header class="header">
+        <img src="../Img/Logo_single.svg" alt="" class="logo" />
+        <nav class="menu">
+            <ul class="menu__list">
+              <li id="home" class="menu__item">
+                <a href="./index.html" class="menu__link">Главная</a>
+              </li>
+              <li id="offers" class="menu__item">
+                 <a href="../html/map.html" class="menu__link">Карта</a>
+              </li>
+              <li id="vacancies" class="menu__item">
+                <a href="./works.html" class="menu__link">Вакансии</a>
+              </li>
+              <div class="call-form">
+            <img class="callImg"  src="../Img/icons/Phone.svg" alt="" />
+            <p id="call-form">Позвонить</p></div>
+            </ul>
+        </nav>
+        <div id="burger">
+          <img src="../Img/icons/burger.svg" alt="">
         </div>
+         
       </header>
+      <div id="mobileMenu" class="hide">
+        <ul>
+          <li class="menu__link" ><a href="./index.html">Главная</a></li>
+          <li class="menu__link"><a href="../html/map.html">Карта</a></li>
+          <li class="menu__link"> <a href="./works.html">Вакансии</a></li>
+          <li class="menu__link"> <a href="./contacts.html">Контакты</a></li>
+        </ul>
+        <img id="closeMenu" src="../Img/icons/close.svg" alt="">
+      </div>
     </div>
     <main class="main">
       <section>
@@ -120,7 +110,7 @@
             Найдите и свяжитесь с нашей командой — заполните анкету прямо
             сейчас!
           </h4>
-          <p id="anketa">Заполнить анкету ></p>
+          <a id="anketa">Заполнить анкету ></a>
         </div>
       </section>
 
@@ -322,81 +312,7 @@
       </section>
 
       
-        <div class="grid">
-          <div class="manager advantages-shadow">
-            <h5>Manager</h5>
-            <div>
-              <img src="../Img/icons/Phone-black.svg" alt="" />
-              <p>+37369460354</p>
-              <div>
-                <img src="../Img/icons/viber-black.svg" alt="" /><img
-                  src="../Img/icons/whatsapp-black.svg"
-                  alt="" /><img src="../Img/icons/telegram-black.svg" alt="" />
-              </div>
-            </div>
-            <img class="photoManager" src="../Img/Photo_managers/Artur.jpg" alt="" />
-            <p>
-            Менеджер по работам с голландскими, ческими и немецкими заказчиками.
-            <br />Кровельные работы, фрезировщики, водители, мастера универсалы
-            по внутриней отделке, и много других специальностей.
-          </p>
-          </div>
-          <div class="manager advantages-shadow">
-            <h5>Manager</h5>
-            <div class="contact">
-              <div><img src="../Img/icons/Phone-black.svg" alt="" />
-              <p>+37369460354</p></div>
-              <div class="contactMessegers">
-                <img src="../Img/icons/viber-black.svg" alt="" /><img
-                  src="../Img/icons/whatsapp-black.svg"
-                  alt="" /><img src="../Img/icons/telegram-black.svg" alt="" />
-              </div>
-            </div>
-            <img class="photoManager" src="../Img/Photo_managers/Artur.jpg" alt="" />
-            <p>
-            Менеджер по работам с голландскими, ческими и немецкими заказчиками.
-            <br />Кровельные работы, фрезировщики, водители, мастера универсалы
-            по внутриней отделке, и много других специальностей.
-          </p>
-          </div>
-          <div class="manager advantages-shadow">
-            <h5>Manager</h5>
-            <div>
-              <img src="../Img/icons/Phone.svg" alt="" />
-              <p>+37369460354</p>
-              <div>
-                <img src="../Img/icons/viber-black.svg" alt="" /><img
-                  src="../Img/icons/whatsapp-black.svg"
-                  alt="" /><img src="../Img/icons/telegram-black.svg" alt="" />
-              </div>
-            </div>
-            <img class="photoManager" src="../Img/Photo_managers/Artur.jpg" alt="" />
-            <p>
-            Менеджер по работам с голландскими, ческими и немецкими заказчиками.
-            <br />Кровельные работы, фрезировщики, водители, мастера универсалы
-            по внутриней отделке, и много других специальностей.
-          </p>
-          </div>
-          <div class="manager advantages-shadow">
-            <h5>Manager</h5>
-            <div>
-              <img src="../Img/icons/Phone.svg" alt="" />
-              <p>+37369460354</p>
-              <div>
-                <img src="../Img/icons/viber-black.svg" alt="" /><img
-                  src="../Img/icons/whatsapp-black.svg"
-                  alt="" /><img src="../Img/icons/telegram-black.svg" alt="" />
-              </div>
-            </div>
-            <img class="photoManager" src="../Img/Photo_managers/Artur.jpg" alt="" />
-            <p>
-            Менеджер по работам с голландскими, ческими и немецкими заказчиками.
-            <br />Кровельные работы, фрезировщики, водители, мастера универсалы
-            по внутриней отделке, и много других специальностей.
-          </p>
-          </div>
-        </div>
-     
+   
     </main>
 
     <footer>
@@ -416,24 +332,38 @@
     </footer>
   </body>
   <!-- anket -->
-  <div class="wraper-anket1">
+    <div class="wraper-anket1" id="anketWrapper"> 
     <div class="section-1 section9">
-      <form class="anketa-profession" action="">
-        <img src="../Img/icons/close.svg" alt="" id="close1" />
-        <img src="../Img/Group 2.svg" alt="" />
-        <div class="anket name-phone-age show">
-          <p>Личные данные</p>
-          <label> <input id="name1" type="text" placeholder="Имя" /> </label>
-          <label for=""> <input type="tel" placeholder="Телефон" /> </label>
-        </div>
-
-        <div class="switch-btn">
-          <div><p class="" id="cancel1">< Закрыть</p></div>
-          <div><p id="submit1">Отправить ></p></div>
-        </div>
-      </form>
-    </div>
+   
+       <form id="form" class="anketa-profession">
+  
+       <div class="field">
+           <label for="person">Имя</label>
+             <input type="text" name="person" id="person">
+       </div>
+  <div class="field">
+    <label for="phone">Номер телефона</label>
+    <input type="text" name="phone" id="phone">
   </div>
+  <div class="field">
+    <label for="profesion">Профессия</label>
+    <input type="text" name="profesion" id="profesion">
+  </div>
+
+  <input type="submit" id="button" value="Отправить" >
+  <img id="closeAnket1" src="../Img/icons/close.svg" alt="">
+</form>
+
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('2ZIyu-7ULfWbAXi5w')
+</script>
+
+    </div>
+    </div>
   <!-- Form -->
   <!--Start anket  -->
   <div class="wraper-anket">
