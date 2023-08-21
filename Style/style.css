@@ -469,6 +469,46 @@ body a:visited{color: #227ED5;}
   right: 10px;
   width: 30px;
 }
+ /* ------------Strat Media------------ */
+ @media (max-width: 1200px){
+  .header li {
+    display: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #burger {
+    display: flex;
+    flex-direction: row-reverse;
+    order: 3;
+    padding: 0 40px;
+    width: 100px;
+  }
+  .logo {
+    width: 10%;
+    order: 1;
+  }
+  .call-form {
+    width: 100px;
+    order: 2;
+    font-size: clamp(4svw, 24px, 5vw);
+  }
+ 
+  #call-form{
+    width: 180%;
+  }
+  .callImg{
+    transform: scale(3);
+    padding-right: 10px;
+  }
+  .mobileMenu li{
+    font-size: 3.5rem;
+  }
+  }
+
+  /* -----------------End Media----------------- */
+
 /* --------------end header------------- */
   
  
@@ -916,117 +956,6 @@ justify-content: center;
     line-height: 1.2381;
     font-weight: 400;
 }
-
-
-/* --------------Forms--------------- */
-
-/*  */
-.wraper-anket{ 
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-   background-color: #fbfbfd;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   display: none;
-}
-.section {
-     height: 100vh;
-    /* max-width: 375px; */
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.wraper-anket1{ 
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-   background-color: #fbfbfd;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   display: none;
-}
-.section-1 {
-     height: 100vh;
-    /* max-width: 375px; */
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.section9 {
-  /* display: flex; */
-  position: absolute;
-  top: 0;
-}
-
-.mobileMenu{
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  background-color: #fbfbfd;
-  overflow: hidden;
-  /* margin: auto auto; */
-   position: fixed;
-}
-
-.mobileMenu li{
-  list-style: none;
-  padding: 25px;
-  font-size: 22px;
-  text-align: center;
-  
-}
-
-
-#closeAnket1{
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 30px;
-}
-
-/* ---------footer------------ */
-footer{
-  background-color: #1D1D1F;
-
-padding: 0 3rem 2rem 3rem ;
-  
-}
-.footer-flex{
-  box-sizing: border-box;
-  background-color: #1D1D1F;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  margin-top: 15px;
-  gap: 1rem;
-}
-.footer-flex p{
-  margin-left: 8px;
-  color: #a1a1a6;
-}
-
-.footer-flex>hr{
-     background-color: #1D1D1F;
-  color: #a1a1a6;
-}
-#footer-desc{
-   background-color: #1D1D1F;
-  color: #a1a1a6;
-}
-
-
 /* \\\\\\\\\\\\\\\\\\\\\\Start @media\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 
@@ -1042,7 +971,6 @@ padding: 0 3rem 2rem 3rem ;
  .section1 img{
       transform: scale(2);
 }
-
  .section2{
   height: 50vh;
  }
@@ -1114,45 +1042,7 @@ margin: auto;
  .advantages-right-d a{
   font-size: 2.5rem;
  }
-
-
-
- /* -------------------- */
-  .header li {
-    display: none;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-  }
-  #burger {
-    display: flex;
-    flex-direction: row-reverse;
-    order: 3;
-    padding: 0 40px;
-    width: 100px;
-  }
-  .logo {
-    width: 10%;
-    order: 1;
-  }
-  .call-form {
-    width: 100px;
-    order: 2;
-    font-size: clamp(4svw, 24px, 5vw);
-  }
- 
-  #call-form{
-    width: 180%;
-  }
-  .callImg{
-    transform: scale(3);
-    padding-right: 10px;
-  }
-  .mobileMenu li{
-    font-size: 3.5rem;
-  }
-  .plus{
+ .plus{
     flex-direction: column;
     gap: 5rem;
     height: max-content;
@@ -1161,8 +1051,106 @@ margin: auto;
   .contacts a{
     text-align: center;
   }
+}
+/* \\\\\\\\\\\\\\\\\\\\\\End @media\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
-  /* footerMedia */
+/* --------------Forms--------------- */
+
+/*  */
+.wraper-anket{ 
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+   background-color: #fbfbfd;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: none;
+}
+.section {
+     height: 100vh;
+    /* max-width: 375px; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wraper-anket1{ 
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+   background-color: #fbfbfd;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: none;
+}
+.section-1 {
+     height: 100vh;
+    /* max-width: 375px; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section9 {
+  /* display: flex; */
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+#closeAnket1{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+}
+
+/* ---------footer------------ */
+footer{
+  background-color: #1D1D1F;
+
+padding: 0 3rem 2rem 3rem ;
+  
+}
+.footer-flex{
+  box-sizing: border-box;
+  background-color: #1D1D1F;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 1rem;
+}
+.footer-flex p{
+  margin-left: 8px;
+  color: #a1a1a6;
+}
+
+.footer-flex>hr{
+     background-color: #1D1D1F;
+  color: #a1a1a6;
+}
+#footer-desc{
+   background-color: #1D1D1F;
+  color: #a1a1a6;
+}
+
+
+
+
+
+
+
+  /*--------------Footer-Media--------------  */
+@media (max-width: 1200px){
+ 
   footer{
 padding: 0 3rem 2rem 3rem ;
   }

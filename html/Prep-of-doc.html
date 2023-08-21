@@ -2,97 +2,96 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etalones</title>
     <link rel="stylesheet" href="../Style/prep-of-docs.css" />
-    <link rel="stylesheet" href="../Style/modalAnket.css">
-     <script src="../Js/jquery.js" defer></script>
+    <link rel="stylesheet" href="../Style/modalAnket.css" />
+    <script src="../Js/jquery.js" defer></script>
     <script src="../Js/script.js" defer></script>
     <script src="../Js/anketa-profession.js" defer></script>
     <script src="../Js/call-form.js" defer></script>
     <script src="/html/modal.js" defer></script>
     <script defer src="../Js/modalAnketMultiselect.js"></script>
     <script defer src="../Js/burgerMenu.js"></script>
-<script defer src="../Js/eMailJs.js"></script>
+    <script defer src="../Js/eMailJs.js"></script>
     <script defer src="../Js/modalImg.js"></script>
   </head>
   <body>
-    <div class="wraper">     
-          <div class="header__slider" id="slider">
-            <div id="top__burger">
-              <button id="close__burger">
-                <svg
-                  width="35"
-                  height="35"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <circle
-                    cx="12"
-                    cy="12"
-                    r="9"
-                    fill="#7E869E"
-                    fill-opacity="0.25" />
-                  <path
-                    d="M16 8L8 16"
-                    stroke="#222222"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path
-                    d="M8 8L16 16"
-                    stroke="#222222"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-            <ul class="menu__list-slide">
-              <li class="list__item slide_item">
-                <a href="" class="menu__link">Главная</a>
-              </li>
-              <li class="list__item slide_item">
-                 <a href="../html/map.html" class="menu__link">Карта</a>
-              </li>
+    <div class="wraper">
+      <div class="header__slider" id="slider">
+        <div id="top__burger">
+          <button id="close__burger">
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle
+                cx="12"
+                cy="12"
+                r="9"
+                fill="#7E869E"
+                fill-opacity="0.25" />
+              <path
+                d="M16 8L8 16"
+                stroke="#222222"
+                stroke-width="1.2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M8 8L16 16"
+                stroke="#222222"
+                stroke-width="1.2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <ul class="menu__list-slide">
+          <li class="list__item slide_item">
+            <a href="" class="menu__link">Главная</a>
+          </li>
+          <li class="list__item slide_item">
+            <a href="../html/map.html" class="menu__link">Карта</a>
+          </li>
 
-              <li class="list__item slide_item">
-                <a href="" class="menu__link">Вакансии</a>
-              </li>
-            </ul>
-          </div>
-       
+          <li class="list__item slide_item">
+            <a href="" class="menu__link">Вакансии</a>
+          </li>
+        </ul>
+      </div>
+
       <header class="header">
         <img src="../Img/Logo_single.svg" alt="" class="logo" />
         <nav class="menu">
-            <ul class="menu__list">
-              <li id="home" class="menu__item">
-                <a href="./index.html" class="menu__link">Главная</a>
-              </li>
-              <li id="offers" class="menu__item">
-                 <a href="../html/map.html" class="menu__link">Карта</a>
-              </li>
-              <li id="vacancies" class="menu__item">
-                <a href="./works.html" class="menu__link">Вакансии</a>
-              </li>
-              <div class="call-form">
-            <img class="callImg"  src="../Img/icons/Phone.svg" alt="" />
-            <p id="call-form">Позвонить</p></div>
-            </ul>
+          <ul class="menu__list">
+            <li id="home" class="menu__item">
+              <a href="./index.html" class="menu__link">Главная</a>
+            </li>
+            <li id="offers" class="menu__item">
+              <a href="../html/map.html" class="menu__link">Карта</a>
+            </li>
+            <li id="vacancies" class="menu__item">
+              <a href="./works.html" class="menu__link">Вакансии</a>
+            </li>
+            <div class="call-form">
+              <img class="callImg" src="../Img/icons/Phone.svg" alt="" />
+              <p id="call-form">Позвонить</p>
+            </div>
+          </ul>
         </nav>
         <div id="burger">
-          <img src="../Img/icons/burger.svg" alt="">
+          <img src="../Img/icons/burger.svg" alt="" />
         </div>
-         
       </header>
       <div id="mobileMenu" class="hide">
         <ul>
-          <li class="menu__link" ><a href="./index.html">Главная</a></li>
+          <li class="menu__link"><a href="./index.html">Главная</a></li>
           <li class="menu__link"><a href="../html/map.html">Карта</a></li>
-          <li class="menu__link"> <a href="./works.html">Вакансии</a></li>
-          <li class="menu__link"> <a href="./contacts.html">Контакты</a></li>
+          <li class="menu__link"><a href="./works.html">Вакансии</a></li>
+          <li class="menu__link"><a href="./contacts.html">Контакты</a></li>
         </ul>
-        <img id="closeMenu" src="../Img/icons/close.svg" alt="">
+        <img id="closeMenu" src="../Img/icons/close.svg" alt="" />
       </div>
     </div>
     <main>
@@ -104,29 +103,28 @@
         <p>
           Трудоустройство в нашей строительной фирме проходит дистанционно. Для
           этого вам необходимо предоставить копии паспорта, ПЕСЕЛЯ и рабочей
-          визы менеджеру. Если у вас нет ПЕСЕЛЯ, не
-          волнуйтесь, мы поможем вам его открыть дистанционно. Мы ждем ваших
-          документов и с нетерпением ждем возможности приветствовать вас в нашей
-          команде!
+          визы менеджеру. Если у вас нет ПЕСЕЛЯ, не волнуйтесь, мы поможем вам
+          его открыть дистанционно. Мы ждем ваших документов и с нетерпением
+          ждем возможности приветствовать вас в нашей команде!
         </p>
       </div>
       <div class="scans">
         <h2>Примеры сканов</h2>
         <div class="samples container">
           <div class="sample" id="passport">
-          <img src="../Img/svg/pasport.svg" alt="passport">
+            <img src="../Img/svg/pasport.svg" alt="passport" />
             <p>Скан Паспорта</p>
           </div>
           <div class="sample" id="visa">
-          <img src="../Img/svg/visa.svg" alt="">
+            <img src="../Img/svg/visa.svg" alt="" />
             <p>Скан Визы</p>
           </div>
           <div class="sample" id="pesel">
-           <img src="../Img/svg/pesel.svg" alt="">
+            <img src="../Img/svg/pesel.svg" alt="" />
             <p>Скан Песель</p>
           </div>
-          <div class="sample">
-          <img src="../Img/svg/check.svg" alt="">
+          <div class="sample" id="check">
+            <img src="../Img/svg/check.svg" alt="" />
             <p>Номер счёта</p>
           </div>
         </div>
@@ -158,34 +156,36 @@
       </div>
     </main>
     <div class="modalImgP">
-      <img src="../Img/BG/modalDocuments/passportPage1of3.png" alt="">
-      <img src="../Img/BG/modalDocuments/passportPage2of3.png" alt="">
- <svg id="closeP" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
-  <path d="M17.5096 21.0454C16.5333 20.0691 16.5333 18.4862 17.5096 17.5099C18.4859 16.5336 20.0688 16.5336 21.0451 17.5099L27.5142 23.979L33.9767 17.5164C34.9532 16.5401 36.5359 16.5401 37.5122 17.5164C38.4887 18.4928 38.4887 20.0757 37.5122 21.052L31.0497 27.5145L37.5097 33.9743C38.4859 34.9508 38.4859 36.5335 37.5097 37.5098C36.5332 38.4863 34.9504 38.4863 33.9739 37.5098L27.5142 31.05L21.0524 37.512C20.0761 38.4883 18.4931 38.4883 17.5168 37.512C16.5405 36.5355 16.5405 34.9528 17.5168 33.9763L23.9787 27.5145L17.5096 21.0454Z" fill="#0F0F0F"/>
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M55 27.5C55 42.6877 42.6877 55 27.5 55C12.3122 55 0 42.6877 0 27.5C0 12.3122 12.3122 0 27.5 0C42.6877 0 55 12.3122 55 27.5ZM5.01707 27.5C5.01707 39.917 15.083 49.983 27.5 49.983C39.917 49.983 49.983 39.917 49.983 27.5C49.983 15.083 39.917 5.01707 27.5 5.01707C15.083 5.01707 5.01707 15.083 5.01707 27.5Z" fill="#0F0F0F"/>
-</svg>
+      <img src="../Img/BG/modalDocuments/passportPage1of3.png" alt="" />
+      <img src="../Img/BG/modalDocuments/passportPage2of3.png" alt="" />
+      <img id="closeP" class="closeP" src="../Img/svg/closeP.svg" alt="">
     </div>
-     <div class="modalImgV">
-      <img src="../Img/BG/modalDocuments/visaPage3of3.png" alt="">
-   <svg id="closeV" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
-  <path d="M17.5096 21.0454C16.5333 20.0691 16.5333 18.4862 17.5096 17.5099C18.4859 16.5336 20.0688 16.5336 21.0451 17.5099L27.5142 23.979L33.9767 17.5164C34.9532 16.5401 36.5359 16.5401 37.5122 17.5164C38.4887 18.4928 38.4887 20.0757 37.5122 21.052L31.0497 27.5145L37.5097 33.9743C38.4859 34.9508 38.4859 36.5335 37.5097 37.5098C36.5332 38.4863 34.9504 38.4863 33.9739 37.5098L27.5142 31.05L21.0524 37.512C20.0761 38.4883 18.4931 38.4883 17.5168 37.512C16.5405 36.5355 16.5405 34.9528 17.5168 33.9763L23.9787 27.5145L17.5096 21.0454Z" fill="#0F0F0F"/>
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M55 27.5C55 42.6877 42.6877 55 27.5 55C12.3122 55 0 42.6877 0 27.5C0 12.3122 12.3122 0 27.5 0C42.6877 0 55 12.3122 55 27.5ZM5.01707 27.5C5.01707 39.917 15.083 49.983 27.5 49.983C39.917 49.983 49.983 39.917 49.983 27.5C49.983 15.083 39.917 5.01707 27.5 5.01707C15.083 5.01707 5.01707 15.083 5.01707 27.5Z" fill="#0F0F0F"/>
-</svg>
+    <div class="modalImgV">
+     <img src="../Img/BG/modalDocuments/visaPage3of3.png" alt="">
+     <img class="closeP"  id="closeV"  src="../Img/svg/closeP.svg" alt="">
     </div>
-     <div class="modalImgPS">
-      <img src="../Img/BG/modalDocuments/pesel.png" alt="">
- <svg id="closePS" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
-  <path d="M17.5096 21.0454C16.5333 20.0691 16.5333 18.4862 17.5096 17.5099C18.4859 16.5336 20.0688 16.5336 21.0451 17.5099L27.5142 23.979L33.9767 17.5164C34.9532 16.5401 36.5359 16.5401 37.5122 17.5164C38.4887 18.4928 38.4887 20.0757 37.5122 21.052L31.0497 27.5145L37.5097 33.9743C38.4859 34.9508 38.4859 36.5335 37.5097 37.5098C36.5332 38.4863 34.9504 38.4863 33.9739 37.5098L27.5142 31.05L21.0524 37.512C20.0761 38.4883 18.4931 38.4883 17.5168 37.512C16.5405 36.5355 16.5405 34.9528 17.5168 33.9763L23.9787 27.5145L17.5096 21.0454Z" fill="#0F0F0F"/>
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M55 27.5C55 42.6877 42.6877 55 27.5 55C12.3122 55 0 42.6877 0 27.5C0 12.3122 12.3122 0 27.5 0C42.6877 0 55 12.3122 55 27.5ZM5.01707 27.5C5.01707 39.917 15.083 49.983 27.5 49.983C39.917 49.983 49.983 39.917 49.983 27.5C49.983 15.083 39.917 5.01707 27.5 5.01707C15.083 5.01707 5.01707 15.083 5.01707 27.5Z" fill="#0F0F0F"/>
-</svg>
+    <div class="modalImgPS">
+      <img src="../Img/BG/modalDocuments/pesel.png" alt="" />
+      <img class="closeP"  id="closePS"  src="../Img/svg/closeP.svg" alt="">
     </div>
-      <footer>
-     <div class="footer-flex"> <img class="logo" src="../Img/Logo_single.svg"  alt=""><img src="../Img/icons/Arow-right.svg" alt="">
-     <p>Потдержка</p>
-     <img src="../Img/icons/Arow-right.svg" alt=""> </div>
-     <hr>
-     <div id="footer-desc"><p>© Etalones, 2023 г. Все права защищены.</p></div>
-     <div class="hrefs"><a href="">Политика конфиденциальности |</a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a></div>   
-      </footer>
+     <div class="modalImgCK">
+      <img src="../Img/BG/modalDocuments/pesel.png" alt="" />
+      <img class="closeP"  id="closeCK"  src="../Img/svg/closeP.svg" alt="">
+    </div>
+    <footer>
+      <div class="footer-flex">
+        <img class="logo" src="../Img/Logo_single.svg" alt="" /><img
+          src="../Img/icons/Arow-right.svg"
+          alt="" />
+        <p>Потдержка</p>
+        <img src="../Img/icons/Arow-right.svg" alt="" />
+      </div>
+      <hr />
+      <div id="footer-desc"><p>© Etalones, 2023 г. Все права защищены.</p></div>
+      <div class="hrefs">
+        <a href="">Политика конфиденциальности |</a><a href=""></a
+        ><a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+      </div>
+    </footer>
   </body>
 </html>

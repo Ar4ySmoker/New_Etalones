@@ -723,10 +723,10 @@ display: flex;
     margin-top: -340px;
     margin-left: 0;
 }
-.card-body:(:first-child){
+/* .card-body:first-child{
   margin: 50px;
   position: relative;
-}
+} */
 
 .card:hover{
    width: 95%;
