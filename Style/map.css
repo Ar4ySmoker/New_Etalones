@@ -6,12 +6,13 @@ body a:visited{color: #227ED5;}
   margin: 0 auto;
 }
 .wraper {
-  position: fixed;
-  height: 44px;
+  position: relative;
+  height: 8vh;
   width: 100vw;
   z-index: 998;
 }
 .header {
+  top: 0;
   justify-content: space-between;
   position: fixed;
   display: flex;
@@ -163,15 +164,22 @@ body a:visited{color: #227ED5;}
   /* -----------------End Media----------------- */
 
 /* --------------end header------------- */
-.map{width: 98.5vw;height:82vh;
-position: relative; }
 
-#map{
+/* .map{
+width: 98.5vw;
+height:82vh;
+position: relative;
+top: 0; 
+} */
+.map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height:85vh;
   position: relative;
-  box-sizing: border-box;
-  width: 100%;
-  height: 101%;
 }
+
 
 
 /* --------------Forms--------------- */
@@ -233,11 +241,13 @@ position: relative; }
 }
 /* ---------footer------------ */
 footer{
+  position: fixed;
+  bottom: 0;
+ width: 100%;
   box-sizing: border-box;
   background-color: #1D1D1F;
-
-padding: 0 3rem 2rem 3rem ;
-  
+  padding: 0 3rem 2rem 3rem ;
+ 
 }
 .footer-flex{
   box-sizing: border-box;

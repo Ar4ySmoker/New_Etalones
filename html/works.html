@@ -6,20 +6,15 @@
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap"
       rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="../Style/style.css" /> -->
-    <!-- <link rel="stylesheet" href="./test.css"> -->
-
-    <link rel="stylesheet" href="../Style/modalAnket.css" />
     <link rel="stylesheet" href="../Style/work.css" />
+    <link rel="stylesheet" href="../Style/modalAnket.css">
     <script src="../Js/jquery.js" defer></script>
     <script src="../Js/script.js" defer></script>
     <script src="../Js/anketa-profession.js" defer></script>
     <script src="../Js/call-form.js" defer></script>
-    <script src="/html/modal.js" defer></script>
-
     <script defer src="../Js/modalAnketMultiselect.js"></script>
     <script defer src="../Js/burgerMenu.js"></script>
-
+    <script defer src="../Js/eMailJs.js"></script>
     <title>EtalonES</title>
   </head>
   <body>
@@ -737,16 +732,113 @@
       </div>
     </main>
 
-    <!-- <footer>
+    <footer>
      <div class="footer-flex"> <img class="logo" src="../Img/Logo_single.svg"  alt=""><img src="../Img/icons/Arow-right.svg" alt="">
      <p>Потдержка</p>
-     <img src="../Img/icons/Arow-right.svg" alt=""> 
-    </div>
+     <img src="../Img/icons/Arow-right.svg" alt=""> </div>
      <hr>
-     <div id="footer-desc"><p>© Etalones, 2023 г. Все права защищены.</p>
+     <div id="footer-desc"><p>© Etalones, 2023 г. Все права защищены.</p></div>
+     <div class="hrefs"><a href="">Политика конфиденциальности |</a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a></div>   
+      </footer>
+
+   <!-- Forms -->
+
+    <!--Start anket  -->
+    <div class="wraper-anket"> 
+    <div class="section section8">
+      <form  class="anketa-profession" action="">
+        <img src="../Img/icons/close.svg" alt="" id="close" />
+        <img src="../Img/Group 2.svg" alt="" />
+        <div class="anket name-phone-age show">
+          <p>Личные данные</p>
+          <label> <input id="name" type="text" placeholder="Имя" name="person" /> </label>
+          <label for=""> <input type="text" placeholder="Телефон" /> </label>
+          <label for=""> <input type="date" placeholder="дата" /> </label>
+        </div>
+
+        <div class="anket country">
+          <label>
+            <input type="text" placeholder="Гражданство какой страны?"
+          /></label>
+          <label>
+            <input
+              type="text"
+              placeholder="Какие документы у вас есть в наличии"
+          /></label>
+        </div>
+        <div class="anket profession">
+           <div class="createAccount_inner">
+            
+<!--        One ELEMENT of MULTY SELECT  -->
+            <div class="form_label">
+             
+            </div>
+    <!--   END  -->        
+           
+            <div class="form_label">
+             <select multiple="multiple" id="admission" name="admission[]" id="select" class="select">
+  <option disabled>Выберите</option>
+  <option value="XXX1">XXX1</option>
+  <option value="XXX2">XXX2</option>
+  <option value="XXX3">XXX3</option>
+  <option value="XXX4">XXX4</option>
+</select>
+            </div>  
+          </div>
+    
+        </div>
+        <div class="anket skils">
+          <select multiple="multiple" id="admission" name="admission[]" id="select" class="select">
+  <option disabled>Выберите</option>
+  <option value="XXX1">XXX1</option>
+  <option value="XXX2">XXX2</option>
+  <option value="XXX3">XXX3</option>
+  <option value="XXX4">XXX4</option>
+</select>
+        </div>
+        <div class="switch-btn">
+          <div><p class="hide" id="step-back">< Назад</p></div>
+          <div><p  id="step-next">Вперёд ></p></div>
+        </div>
+
+      </form>
     </div>
-     <div class="Hrefs"><a href="">Политика конфиденциальности |</a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a>
-    </div>   
-      </footer> -->
+    </div>
+    <!-- End anket -->
+
+     <!--Анкета "позвонить"  -->
+    <div class="wraper-anket1" id="anketWrapper"> 
+    <div class="section-1 section9">
+   
+       <form id="form" class="anketa-profession">
+  
+       <div class="field">
+           <label for="person">Имя</label>
+             <input type="text" name="person" id="person">
+       </div>
+  <div class="field">
+    <label for="phone">Номер телефона</label>
+    <input type="text" name="phone" id="phone">
+  </div>
+  <div class="field">
+    <label for="profesion">Профессия</label>
+    <input type="text" name="profesion" id="profesion">
+  </div>
+
+  <input type="submit" id="button" value="Отправить" >
+  <img id="closeAnket1" src="../Img/icons/close.svg" alt="">
+</form>
+
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('2ZIyu-7ULfWbAXi5w')
+</script>
+
+    </div>
+    </div>
+    <!-- End anket -->
   </body>
 </html>

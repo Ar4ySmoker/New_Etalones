@@ -355,7 +355,7 @@ body a {
 body a:visited {
   color: #227ed5;
 }
-.container {
+ .container {
   max-width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
@@ -380,7 +380,7 @@ body a:visited {
 }
 .logo {
   height: 8vh;
-  padding: 7px 0;
+  /* padding: 7px 0; */
   align-self: center;
 }
 .menu__list {
@@ -429,7 +429,7 @@ body a:visited {
   display: none;
 }
 #burger {
-  height: 2.5vh;
+  height: 2vh;
   display: none;
 }
 
@@ -459,9 +459,10 @@ body a:visited {
 }
 
 #closeMenu {
+  height: 3vh;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 2rem;
+  right: 2rem;
 }
 #closeAnket1 {
   position: absolute;
@@ -469,7 +470,48 @@ body a:visited {
   right: 10px;
   width: 30px;
 }
+ /* ------------Strat Media------------ */
+ @media (max-width: 1200px){
+  .header li {
+    display: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #burger {
+    display: flex;
+    flex-direction: row-reverse;
+    order: 3;
+    padding: 0 40px;
+    width: 100px;
+  }
+  .logo {
+    width: 10%;
+    order: 1;
+  }
+  .call-form {
+    width: 100px;
+    order: 2;
+    font-size: clamp(4svw, 24px, 5vw);
+  }
+ 
+  #call-form{
+    width: 180%;
+  }
+  .callImg{
+    transform: scale(3);
+    padding-right: 10px;
+  }
+  .mobileMenu li{
+    font-size: 3.5rem;
+  }
+  }
+
+  /* -----------------End Media----------------- */
+
 /* --------------end header------------- */
+
 section{box-sizing: border-box;}
 /* ------------Carusel----------- */
 .flex-work {
@@ -483,17 +525,10 @@ section{box-sizing: border-box;}
 }
 .card-body {
   background-color: black;
-  /* height: 80vh; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* padding-bottom: 3rem; */
-  /* margin-bottom: 15px; */
 }
 .card-body > h3 {
   margin: 0;
-  padding: 6rem 0 5rem 0;
+  padding: 10% 0 5rem 0;
   color: #ffffff;
   text-align: center;
   font-size: 1.8rem;
@@ -682,37 +717,146 @@ svg {
   /* padding: 3px !important; */
 }
 
-/* ---------footer------------ */
-footer {
-  background-color: #1d1d1f;
+/* --------------Forms--------------- */
+
+
+.wraper-anket{ 
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+   background-color: #fbfbfd;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: none;
 }
-.footer-flex {
+.section {
+     height: 100vh;
+    /* max-width: 375px; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wraper-anket1{ 
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+   background-color: #fbfbfd;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: none;
+}
+.section-1 {
+     height: 100vh;
+    /* max-width: 375px; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section9 {
+  /* display: flex; */
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+#closeAnket1{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+}
+/* ---------footer------------ */
+footer{
+  background-color: #1D1D1F;
+
+padding: 0 3rem 2rem 3rem ;
+  
+}
+.footer-flex{
   box-sizing: border-box;
-  background-color: #1d1d1f;
+  background-color: #1D1D1F;
   display: flex;
   text-align: center;
+  align-items: center;
   padding-top: 15px;
-  padding-left: 25px;
+  gap: 1rem;
 }
-.footer-flex p {
+.footer-flex p{
   margin-left: 8px;
-  color: #a1a1a6;
-}
-.footer-flex img {
-  margin-left: 8px;
-}
-.footer-flex > hr {
-  background-color: #1d1d1f;
-  color: #a1a1a6;
-}
-#footer-desc {
-  background-color: #1d1d1f;
   color: #a1a1a6;
 }
 
+.footer-flex>hr{
+     background-color: #1D1D1F;
+  color: #a1a1a6;
+}
+#footer-desc{
+   background-color: #1D1D1F;
+  color: #a1a1a6;
+}
+
+
+
+
+
+
+
+  /*--------------Footer-Media--------------  */
+@media (max-width: 1200px){
+ 
+  footer{
+padding: 0 3rem 2rem 3rem ;
+  }
+  .footer-flex{
+  box-sizing: border-box;
+  background-color: #1D1D1F;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  padding-top: 15px;
+  gap: 1rem;
+}
+
+/* endFooterMedia */
+
+/* CallFormMedia */
+label,input{
+  font-size: 2rem;
+}
+
+/* EndCallFormMedia */
+
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+}
+.show {
+  display: flex;
+}
+.mobileMenu ul{
+   margin-top: 30%;
+}}
+/* \\\\\\\\\\\\\\\\\\\\\\End @media\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\Start media\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 @media (max-width: 1100px) {
  .card{width: 90%;}
+  .card-body > h3 {
+  padding: 20% 0 5rem 0;
+}
 .test{
 display: flex;
   flex-direction: column;
@@ -749,7 +893,7 @@ font-size: 1.5rem;
 }
 .mesegers-card a:last-child{
   overflow: hidden;
-  opacity: 1;
+  opacity: 0;
   width: fit-content;
 }
 .bar{
@@ -811,52 +955,4 @@ grid-template-columns: 1fr 1fr;
  vertical-align: top;
 }
 }
-/* \\\\\\\\\\\\\\\\\\\\\\Start @media 2\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
-@media (max-width: 1200px) {
- 
-  .header li {
-    display: none;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-  }
-  #burger {
-    display: flex;
-    flex-direction: row-reverse;
-    order: 3;
-    padding: 0 40px;
-    width: 100px;
-  }
-  .logo {
-    order: 1;
-  }
-  .call-form {
-    width: 100px;
-    order: 2;
-    font-size: clamp(2svw, 24px, 5vw);
-  }
- 
-  #call-form{
-    width: 120%;
-  }
-  .callImg{
-    transform: scale(2);
-    padding-right: 5px;
-  }
-  .mobileMenu li{
-    font-size: 50px;
-  }
-}
-@media (max-width: 992px) {
-}
-@media (max-width: 768px) {
-}
-
-@media (max-width: 480px) {
-}
-.show {
-  display: flex;
-}
-/* \\\\\\\\\\\\\\\\\\\\\\End @media 2\\\\\\\\\\\\\\\\\\\\\\\\\\ */
