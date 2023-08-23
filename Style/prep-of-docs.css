@@ -743,6 +743,12 @@ padding: 0 3rem 2rem 3rem ;
   width: 30px;
 }
 
+/* -----------------MainMedia---------------------- */
+
+.sample img{
+width: 60%;
+}
+
   /* footerMedia */
   footer{
 padding: 0 3rem 2rem 3rem ;

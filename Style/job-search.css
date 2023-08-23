@@ -378,7 +378,7 @@ body a:visited{color: #227ED5;}
 }
 .logo {
   height: 8vh;
-  padding: 7px 0;
+  /* padding: 7px 0; */
   align-self: center;
 }
 .menu__list {
@@ -427,7 +427,7 @@ body a:visited{color: #227ED5;}
   display: none;
 }
 #burger {
-  height: 2.5vh;
+  height: 2vh;
   display: none;
 }
 
@@ -457,9 +457,10 @@ body a:visited{color: #227ED5;}
 }
 
 #closeMenu {
+  height: 3vh;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 2rem;
+  right: 2rem;
 }
 #closeAnket1 {
   position: absolute;
@@ -467,7 +468,48 @@ body a:visited{color: #227ED5;}
   right: 10px;
   width: 30px;
 }
+ /* ------------Strat Media------------ */
+ @media (max-width: 1200px){
+  .header li {
+    display: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #burger {
+    display: flex;
+    flex-direction: row-reverse;
+    order: 3;
+    padding: 0 40px;
+    width: 100px;
+  }
+  .logo {
+    width: 10%;
+    order: 1;
+  }
+  .call-form {
+    width: 100px;
+    order: 2;
+    font-size: clamp(4svw, 24px, 5vw);
+  }
+ 
+  #call-form{
+    width: 180%;
+  }
+  .callImg{
+    transform: scale(3);
+    padding-right: 10px;
+  }
+  .mobileMenu li{
+    font-size: 3.5rem;
+  }
+  }
+
+  /* -----------------End Media----------------- */
+
 /* --------------end header------------- */
+  
 
   /* -----------------Main----------------- */
   .mainImg {
@@ -519,6 +561,37 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     flex-direction: column;
     gap: 1rem;
   }
+  .card {
+    box-sizing: border-box;
+  display: flex;
+  height: 400px;
+  width: 250px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -100px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+   height: 450px;
+  width: 300px;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 100px;
+  transition: 0.4s ease-out;
+}
+
   /* .mesegersScrin{
     display: flex;
     margin: 0 auto;
@@ -554,39 +627,6 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
   margin: 0 20px;
   display: flex;
 }
-.card {
-    box-sizing: border-box;
-  display: flex;
-  height: 400px;
-  width: 250px;
-  background-color: #17141d;
-  border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
-/*   margin-left: -50px; */
-  transition: 0.4s ease-out;
-  position: relative;
-  left: 0px;
-}
-
-.card:not(:first-child) {
-    margin-left: -100px;
-}
-
-.card:hover {
-  transform: translateY(-20px);
-  transition: 0.4s ease-out;
-   height: 450px;
-  width: 300px;
-}
-
-.card:hover ~ .card {
-  position: relative;
-  left: 100px;
-  transition: 0.4s ease-out;
-}
-
-
-
 
 .hide{
   display: none;
@@ -603,44 +643,100 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
    display: none;
 }
 
-/* \\\\\\\\\\\\\\\\\\\\\\Start @media 2\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* -----------Start MediaMain------------- */
+@media(max-width:1100px){
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+    .mainImg {
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+  background-position: 70%;
 
-@media (max-width: 1200px) {
- 
-  .header li {
-    display: none;
   }
-  .header {
-    display: flex;
-    justify-content: space-between;
+  .container1 img{
+    width: 100%;
   }
-  #burger {
-    display: flex;
-    flex-direction: row-reverse;
-    order: 3;
-    padding: 0 40px;
-    width: 100px;
+  .mesegers{
+    gap: 6rem;
   }
-  .logo {
-    order: 1;
+  .choiseMethod a{
+    font-size: 2rem;
   }
-  .call-form {
-    width: 100px;
-    order: 2;
-    font-size: clamp(2svw, 24px, 5vw);
+  .mesegers img{
+    width: 8rem;
   }
- 
-  #call-form{
-    width: 120%;
-  }
-  .callImg{
-    transform: scale(2);
-    padding-right: 5px;
-  }
-  .mobileMenu li{
-    font-size: 50px;
+  .mesegers a{
+    font-size: 1.2rem;
   }
 }
+/* ---------footer------------ */
+footer{
+  background-color: #1D1D1F;
+
+padding: 0 3rem 2rem 3rem ;
+  
+}
+.footer-flex{
+  box-sizing: border-box;
+  background-color: #1D1D1F;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 1rem;
+}
+.footer-flex p{
+  margin-left: 8px;
+  color: #a1a1a6;
+}
+
+.footer-flex>hr{
+     background-color: #1D1D1F;
+  color: #a1a1a6;
+}
+#footer-desc{
+   background-color: #1D1D1F;
+  color: #a1a1a6;
+}
+
+
+
+
+
+
+
+  /*--------------Footer-Media--------------  */
+@media (max-width: 1200px){
+ 
+  footer{
+padding: 0 3rem 2rem 3rem ;
+  }
+  .footer-flex{
+  box-sizing: border-box;
+  background-color: #1D1D1F;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 1rem;
+}
+
+/* endFooterMedia */
+
+/* CallFormMedia */
+label,input{
+  font-size: 2rem;
+}
+
+/* EndCallFormMedia */
+
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
@@ -651,4 +747,7 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 .show {
   display: flex;
 }
-/* \\\\\\\\\\\\\\\\\\\\\\End @media 2\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.mobileMenu ul{
+   margin-top: 30%;
+}}
+/* \\\\\\\\\\\\\\\\\\\\\\End @media\\\\\\\\\\\\\\\\\\\\\\\\\\ */
